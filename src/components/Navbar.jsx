@@ -44,7 +44,10 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
         <>
             <AppBar>
 
-                <Toolbar>
+                <Toolbar sx={{
+                    boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)'
+                    
+                }}>
                     <NavLink to='/' >
                         <img
                             src="/logo3.png"
@@ -125,7 +128,7 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/servicios' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Servicios</MenuItem>
                             </NavLink>
-                            <NavLink to='/misio-vision' style={{ color: 'black' }}>
+                            <NavLink to='/mision-vision' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Misión y Visión</MenuItem>
                             </NavLink>
                             <NavLink to='/fut' style={{ color: 'black' }}>

@@ -1,13 +1,24 @@
 import React from 'react'
 import TablaConvocatoria from '../../components/Convocatoria/TablaConvocatoria'
 import { Box } from '@mui/material'
+import { Work } from '@mui/icons-material'
 
 const Convocatoria = () => {
     return (
         <>
-            <Box>
-                <h2 style={{ fontSize: 40, marginTop: 100, color: 'black' }}>Convocatoria</h2>
-                <h4>Lista de Convocatorias</h4>
+            <Box sx={{ marginTop: 12 }}>
+                <Box sx={{
+                    backgroundColor: '#12B1FA',
+                    width: '50%',
+                    borderTopRightRadius: 10,
+                    borderBottomRightRadius: 10,
+                    marginBottom: 3
+                }}>
+                    <h1 style={{ color: 'white', paddingLeft: 10 }}>
+                        <Work />
+                        Convocatoria
+                    </h1>
+                </Box>
                 <TablaConvocatoria />
             </Box>
         </>
