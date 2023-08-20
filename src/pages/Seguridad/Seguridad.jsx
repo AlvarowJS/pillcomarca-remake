@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
-import { Box } from '@mui/material';
-import Carrousel from '../../components/Home/Carrousel';
-import { Handshake } from '@mui/icons-material';
-import Servicios from '../../components/Servicios';
+import React from 'react'
+import SeguridadTabla from '../../components/Seguridad/SeguridadTabla'
+import { LocalPolice } from '@mui/icons-material'
+import { Box } from '@mui/material'
 
-
-const Home = () => {
-
+const Seguridad = () => {
     return (
         <>
-            <Carrousel />
-
-            <Box >
+            <Box marginTop={15}>
                 <Box sx={{
                     backgroundColor: '#12B1FA',
                     width: '50%',
@@ -20,15 +15,16 @@ const Home = () => {
                     marginBottom: 3
                 }}>
                     <h1 style={{ color: 'white', paddingLeft: 10 }}>
-                        <Handshake />
-                        Servicios
+                        <LocalPolice />
+                        Seguridad Ciudadana
                     </h1>
                 </Box>
-                <Servicios />
+                
 
             </Box>
+            <SeguridadTabla />
         </>
     )
 }
 
-export default Home
+export default Seguridad

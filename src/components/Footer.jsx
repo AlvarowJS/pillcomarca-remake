@@ -39,7 +39,11 @@ const Footer = () => {
                     <Grid item sm={3}>
                         <Box>
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>Enlaces Importantes</Typography>
-                            <Typography color={'#ffff'} >Historia</Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/historia'>
+                                Historia
+                                </NavLink>
+                            </Typography>
                             <Typography color={'#ffff'} >Misión y Visión</Typography>
                             <Typography color={'#ffff'} >Noticias</Typography>
                             <Typography color={'#ffff'} >Seguridad Ciudadana</Typography>

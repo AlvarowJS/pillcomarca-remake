@@ -13,6 +13,7 @@ import Fut from '../pages/Fut/Fut'
 import Directorio from '../pages/Directorio/Directorio'
 import Historia from '../pages/Historia/Historia'
 import Organigrama from '../pages/Organigrama/Organigrama'
+import Seguridad from '../pages/Seguridad/Seguridad'
 const AppRouter = () => {
 
   const [menu, setMenu] = useState(false)
@@ -34,6 +35,7 @@ const AppRouter = () => {
             <Route path='/' element={<Home />} />
             <Route path='/convocatoria' element={<Convocatoria />} />
             <Route path='/documentos' element={<DocumentosGestion />} />
+            <Route path='/seguridad-ciudadana' element={<Seguridad />} />
             <Route path='/normativa' element={<Normativa />} />
             <Route path='/servicios' element={<Servicio />} />
             <Route path='/mision-vision' element={<MisionVision />} />

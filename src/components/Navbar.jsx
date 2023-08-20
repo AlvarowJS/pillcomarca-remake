@@ -128,6 +128,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/servicios' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Servicios</MenuItem>
                             </NavLink>
+                            <NavLink to='/seguridad-ciudadana' style={{ color: 'black' }}>
+                                <MenuItem onClick={handleCloseMenu}>Seguridad Ciudadana</MenuItem>
+                            </NavLink>
                             <NavLink to='/mision-vision' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Misión y Visión</MenuItem>
                             </NavLink>
