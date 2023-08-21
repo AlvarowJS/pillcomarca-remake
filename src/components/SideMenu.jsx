@@ -68,6 +68,11 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                                     <ListItemText primary={'Servicios'} />
                                 </ListItem>
                             </NavLink>
+                            <NavLink to='/mesa-partes' onClick={handleBackdropClick}>
+                                <ListItem button sx={{ pl: 4 }}>
+                                    <ListItemText primary={'Mesa de Partes'} />
+                                </ListItem>
+                            </NavLink>
                             <NavLink to='/seguridad-ciudadana' onClick={handleBackdropClick}>
                                 <ListItem button sx={{ pl: 4 }}>
                                     <ListItemText primary={'Seguridad Ciudadana'} />

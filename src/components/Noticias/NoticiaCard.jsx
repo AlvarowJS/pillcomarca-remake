@@ -21,6 +21,7 @@ const NoticiaCard = ({ noticia }) => {
             </div>
             <Box paddingX={1}>
                 <Typography variant='h4' component='h4' sx={{ color: '#12B1FA', fontSize: 30 }}>{noticia.titulo}</Typography>
+                <Typography sx={{ color: '#12B1FA', textAlign: 'right'}}>{noticia.fecha}</Typography>
                 <Typography style={{ whiteSpace: 'pre-line' }}>
                     {/* {noticia.nota} */}
                     {noticia.nota.split(' ').slice(0, 20).join(' ')} {noticia.nota.split(' ').length > 100 ? '...' : ''}

@@ -16,6 +16,7 @@ import Organigrama from '../pages/Organigrama/Organigrama'
 import Seguridad from '../pages/Seguridad/Seguridad'
 import MesaPartes from '../pages/MesaPartes/MesaPartes'
 import Noticias from '../pages/Noticias/Noticias'
+import NoticiaNota from '../pages/Noticias/NoticiaNota'
 const AppRouter = () => {
 
   const [menu, setMenu] = useState(false)
@@ -45,6 +46,7 @@ const AppRouter = () => {
             <Route path='/directorio' element={<Directorio />} />
             <Route path='/historia' element={<Historia />} />
             <Route path='/noticias' element={<Noticias />} />
+            <Route path='/noticias/:id' element={<NoticiaNota />} />
             <Route path='/mesa-partes' element={<MesaPartes />} />
             {/* <Route path='/ubicanos' element={<Ubicanos />} /> */}
             <Route path='/organigrama' element={<Organigrama />} />

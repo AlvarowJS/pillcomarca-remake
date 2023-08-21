@@ -15,7 +15,6 @@ const Servicios = () => {
     navigate('/mesa-partes')
   }
   const correoInstitucional = () => {
-    console.log('asf')
     window.open('https://cinco.serverpe.com:2096', '_blank');
   }
 
@@ -40,7 +39,7 @@ const Servicios = () => {
         >
           <Search sx={{ fontSize: 100 }} />
           <Typography fontSize={25}>
-            Seguimiento de Tramite
+            Seguimiento de Trámite
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={3}

@@ -137,6 +137,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/fut' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>FUT</MenuItem>
                             </NavLink>
+                            <NavLink to='/mesa-partes' style={{ color: 'black' }}>
+                                <MenuItem onClick={handleCloseMenu}>Mesa de partes</MenuItem>
+                            </NavLink>
                             <NavLink to='/directorio' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Directorio</MenuItem>
                             </NavLink>
