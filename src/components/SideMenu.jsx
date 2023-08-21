@@ -6,6 +6,9 @@ import PersonIcon from '@mui/icons-material/Person';
 const SideMenu = ({ menu, setMenu, idioma }) => {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
     const [subMenuOpen2, setSubMenuOpen2] = useState(false);
+    const portalTransparencia = () => {
+        window.open('https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12004#.ZGUICexBz0s', '_blank');
+    };
 
     const handleBackdropClick = () => {
         setMenu(false);
@@ -34,6 +37,17 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
             <Box sx={{ width: 250, paddingTop: 5 }}>
 
                 <List>
+                    <NavLink>
+                        <img
+                            src="/portal.png"
+                            alt="portal de transparencia"
+                            width={100}
+                            height={50}
+                            style={{ marginLeft: 20, cursor: 'pointer' }}
+                            onClick={portalTransparencia}
+                        />
+                    </NavLink>
+                    <br />
                     <NavLink>
                         <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
                             <PersonIcon />

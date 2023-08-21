@@ -207,7 +207,7 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                         </NavLink>
                     </Box>
 
-                    <Box sx={{ marginX: 3, display: { xs: 'block', sm: 'block', md: 'block', lg: 'block', xl: 'block' } }}>
+                    <Box sx={{ marginX: 3, display: { xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' } }}>
                         <img
                             src="/portal.png"
                             alt="portal de transparencia"
