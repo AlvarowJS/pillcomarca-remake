@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Box, Divider, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Collapse } from "@mui/material"
-import { KeyboardArrowDown, KeyboardArrowRight } from '@mui/icons-material';
+import { Box, Button, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Collapse } from "@mui/material"
+import { KeyboardArrowDown, KeyboardArrowRight, Mail } from '@mui/icons-material';
+import PersonIcon from '@mui/icons-material/Person';
 const SideMenu = ({ menu, setMenu, idioma }) => {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
     const [subMenuOpen2, setSubMenuOpen2] = useState(false);
@@ -9,7 +10,12 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
     const handleBackdropClick = () => {
         setMenu(false);
     };
-
+    const tramiteDocumentario = () => {
+        window.open('http://165.22.34.176/login', '_blank');
+    }
+    const correoInstitucional = () => {
+        window.open('https://cinco.serverpe.com:2096/', '_blank')
+    }
     const handleSubMenuToggle = () => {
         setSubMenuOpen(!subMenuOpen);
     };
@@ -26,7 +32,20 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
             }}
         >
             <Box sx={{ width: 250, paddingTop: 5 }}>
+
                 <List>
+                    <NavLink>
+                        <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                            <PersonIcon />
+                            SysDoc
+                        </Button>
+                    </NavLink>
+                    <NavLink>
+                        <Button onClick={correoInstitucional} sx={{ color: '#FE6C2C', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                            <Mail />
+                            Correo Institucional
+                        </Button>
+                    </NavLink>
                     <NavLink to='/' onClick={handleBackdropClick}>
                         <ListItem button>
                             <ListItemText primary={'Inicio'} />
@@ -74,11 +93,11 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                                     <ListItemText primary={'Historia de Pillco Marca'} />
                                 </ListItem>
                             </NavLink>
-                            <NavLink to='/ubicanos' onClick={handleBackdropClick}>
+                            {/* <NavLink to='/ubicanos' onClick={handleBackdropClick}>
                                 <ListItem button sx={{ pl: 4 }}>
                                     <ListItemText primary={'Ubicanos'} />
                                 </ListItem>
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to='/organigrama' onClick={handleBackdropClick}>
                                 <ListItem button sx={{ pl: 4 }}>
                                     <ListItemText primary={'Organigrama'} />
@@ -108,7 +127,7 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                                 <ListItem button sx={{ pl: 4 }}>
                                     <ListItemText primary={'Documentos normativos'} />
                                 </ListItem>
-                            </NavLink>                                                    
+                            </NavLink>
                         </List>
                     </Collapse>
                     <NavLink to='/noticias' onClick={handleBackdropClick}>

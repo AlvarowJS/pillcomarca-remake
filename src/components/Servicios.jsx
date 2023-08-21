@@ -11,6 +11,9 @@ const Servicios = () => {
   const seguridadCiudadana = () => {
     navigate('/seguridad-ciudadana')
   }
+  const mesaPartes = () => {
+    navigate('/mesa-partes')
+  }
   const correoInstitucional = () => {
     console.log('asf')
     window.open('https://cinco.serverpe.com:2096', '_blank');
@@ -49,6 +52,8 @@ const Servicios = () => {
             textAlign: 'center',
             cursor: 'pointer'
           }}
+          onClick={mesaPartes}
+
         >
           <DesktopMac sx={{ fontSize: 100 }} />
           <Typography fontSize={25}>

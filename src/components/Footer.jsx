@@ -41,19 +41,52 @@ const Footer = () => {
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>Enlaces Importantes</Typography>
                             <Typography color={'#ffff'} >
                                 <NavLink to='/historia'>
-                                Historia
+                                    Historia
                                 </NavLink>
                             </Typography>
-                            <Typography color={'#ffff'} >Misión y Visión</Typography>
-                            <Typography color={'#ffff'} >Noticias</Typography>
-                            <Typography color={'#ffff'} >Seguridad Ciudadana</Typography>
-                            <Typography color={'#ffff'} >Documentos de gestión</Typography>
-                            <Typography color={'#ffff'} >Documentos de Normativa</Typography>
-                            <Typography color={'#ffff'} >Noticias</Typography>
-                            <Typography color={'#ffff'} >Convocatoria</Typography>
-                            <Typography color={'#ffff'} >Trámite documentario</Typography>
-                            <Typography color={'#ffff'} >Seguimiento de tramite</Typography>
-
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/mision-vision'>
+                                    Misión y Visión
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/noticias'>
+                                    Noticias
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/seguridad-ciudadana'>
+                                    Seguridad Ciudadana
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/documentos'>
+                                    Documentos de gestión
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/normativa'>
+                                    Documentos de Normativa
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/convocatoria'>
+                                    Convocatoria
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                {/* <NavLink to='/tramite'> */}
+                                Trámite documentario
+                                {/* </NavLink> */}
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                Seguimiento de tramite
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/convocatoria'>
+                                    Mesa de partes virtual
+                                </NavLink>
+                            </Typography>
 
                         </Box>
                     </Grid>

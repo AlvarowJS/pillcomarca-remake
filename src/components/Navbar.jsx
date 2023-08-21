@@ -143,9 +143,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/historia' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Historia de Pillco Marca</MenuItem>
                             </NavLink>
-                            <NavLink to='/ubicanos' style={{ color: 'black' }}>
+                            {/* <NavLink to='/ubicanos' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Ubicanos</MenuItem>
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to='/organigrama' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Organigrama</MenuItem>
                             </NavLink>

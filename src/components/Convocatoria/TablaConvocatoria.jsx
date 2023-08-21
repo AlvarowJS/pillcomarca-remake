@@ -124,7 +124,7 @@ const TablaConvocatoria = () => {
 
     ]
     return (
-        <Box sx={{ marginTop: 10, overflowX: 'auto' }}>
+        <Box sx={{ marginTop: 2, overflowX: 'auto' }}>
 
             <DataTable
                 noHeader
