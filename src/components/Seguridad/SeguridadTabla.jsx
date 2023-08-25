@@ -38,6 +38,7 @@ const SeguridadTabla = () => {
             }
         },
         {
+            minWidth: '350px',
             sortable: true,
             name: 'Archivo Descargable',
             cell: row => {

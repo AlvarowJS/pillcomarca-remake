@@ -42,35 +42,27 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
             minWidth: '300px',
             sortable: true,
             name: 'Documentos',
+            selector: row => row?.fecha,
             cell: row => {
                 return (
-                    <Grid container>
+                    <Grid container marginY={2}>
                         <Grid item sm={12} md={6} lg={6}>
                             <Typography
-                                fontSize={25}
+                                fontSize={20}
                                 sx={{
                                     fontWeight: 'bold',
-                                    color: '#106CB2'
+                                    color: '#12B1FA'
                                 }}
                             >Doc:</Typography>
                             <Typography>{row?.nombre}</Typography>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={6}>
-                            <Typography
-                                fontSize={25}
-                                sx={{
-                                    fontWeight: 'bold',
-                                    color: '#106CB2'
-                                }}
-                            >Fecha:</Typography>
-                            <Typography>{row?.fecha}</Typography>
-                        </Grid>
+                   
                         <Grid item sm={12} md={12} lg={12}>
                             <Typography
-                                fontSize={25}
+                                fontSize={20}
                                 sx={{
                                     fontWeight: 'bold',
-                                    color: '#106CB2'
+                                    color: '#12B1FA'
                                 }}
                             >Descripción:</Typography>
                             <Typography>{row?.descripcion}</Typography>
@@ -79,6 +71,14 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
                     </Grid>
                 )
             }
+        },
+        {
+            minWidth: '100px',
+            width: '100px',
+            sortable: true,
+            name: 'Fecha',
+            selector: row => row?.fecha,
+
         },
         {
             sortable: true,
@@ -91,7 +91,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
                                 marginBottom: 4, marginTop: 4,
                                 backgroundColor: '#289688', color: 'white',
                                 // paddingLeft: 30, paddingRight: 20, margin: 0,
-                                border: '1px solid #10A1EA', borderRadius: 5
+                                border: '1px solid #12B1FA', borderRadius: 5
                             }}
                             onClick={() => window.open(row?.archivo)}>
                             <PictureAsPdf />

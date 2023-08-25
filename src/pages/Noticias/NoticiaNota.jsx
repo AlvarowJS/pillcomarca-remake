@@ -147,7 +147,6 @@ const NoticiaNota = () => {
         navigate('/noticias')
     }
 
-    const iframeCode = '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02SpauSRTnKoFpC1Te3WrRbHA8BqoNjJAU9KyuaQBr6j34dpPumCWwTQgLc4dhmTXSl&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
     return (
         <>
             <Link to='/noticias'>
@@ -224,7 +223,9 @@ const NoticiaNota = () => {
 
                                     style={{
                                         position: 'relative',
-                                        width: '100%', height: '450px', borderRadius: '50px',
+                                        width: '100%', 
+                                        height: '450px', 
+                                        borderRadius: '50px',
                                         objectFit: 'contain',
                                     }}
                                 />
@@ -250,7 +251,8 @@ const NoticiaNota = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6}>
                     <Box sx={{
-                        width: '100%'
+                        width: '100%',
+                        overflowX: 'auto'
                     }}>
                         {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02SpauSRTnKoFpC1Te3WrRbHA8BqoNjJAU9KyuaQBr6j34dpPumCWwTQgLc4dhmTXSl&show_text=true&width=500" width="500" height="800"></iframe> */}
                         <div dangerouslySetInnerHTML={{ __html: noticiaFiltrada.referencia }} />

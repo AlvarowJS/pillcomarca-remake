@@ -1,4 +1,4 @@
-import { DesktopMac, LocalPolice, Mail, MenuBook, Search } from '@mui/icons-material'
+import { DesktopMac, FileCopy, LocalPolice, Mail, MenuBook, Search } from '@mui/icons-material'
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
@@ -7,6 +7,9 @@ const Servicios = () => {
   const navigate = useNavigate()
   const seguimientoTramite = () => {
     window.open('http://165.22.34.176/tramite/seguimiento', '_blank');
+  }
+  const tramiteDocumentario = () => {
+    window.open('http://165.22.34.176/', '_blank');
   }
   const seguridadCiudadana = () => {
     navigate('/seguridad-ciudadana')
@@ -51,6 +54,22 @@ const Servicios = () => {
             textAlign: 'center',
             cursor: 'pointer'
           }}
+          onClick={tramiteDocumentario}
+        >
+          <FileCopy sx={{ fontSize: 100 }} />
+          <Typography fontSize={25}>
+            Trámite de Documentario
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4} lg={3}
+          sx={{
+            backgroundColor: '#12B1FA',
+            color: 'white',
+            width: '200px',
+            height: '200px',
+            textAlign: 'center',
+            cursor: 'pointer'
+          }}
           onClick={mesaPartes}
 
         >
@@ -61,7 +80,7 @@ const Servicios = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={3}
           sx={{
-            backgroundColor: '#12B1FA',
+            backgroundColor: '#106CB2',
             color: 'white',
             width: '200px',
             height: '200px',

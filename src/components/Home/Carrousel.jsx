@@ -5,7 +5,7 @@ const Carrousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
 
-    const images = ['/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
+    const images = ['/propaganda5.png','/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
     const handlePrevImage = () => {
         setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     };
