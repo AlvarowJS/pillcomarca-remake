@@ -16,7 +16,7 @@ const TableTramites = () => {
         {
             id: 1,
             procedimiento: 'Copia certificada de documentos existentes en expediente y en los archivos de la municipalidad por página',
-            base: 'Ley 27444 Art. 160, * Ley 27444 Art. 160, inciso 1, Art. 55, inciso 3 (11/04/01)',
+            base: 'Ley 27444 Art. 160, \n* Ley 27444 Art. 160, inciso 1, \nArt. 55, inciso 3 (11/04/01)',
             plazo: '3 días',
             requisitos: '1. Solicitud según formato, especificando lo requerido. \n2. Copia simple de D.N.I. \n3. Pago por derecho de Trámite'
         },
@@ -314,6 +314,7 @@ const TableTramites = () => {
         },
         {
             minWidth: '150px',
+            width: '150px',
             sortable: true,
             name: 'Base Legal',
             // selector: row => row.base,
@@ -332,6 +333,7 @@ const TableTramites = () => {
         },
         {
             minWidth: '100px',
+            width: '100px',
             sortable: true,
             name: 'Plazo',
             selector: row => row.plazo,
