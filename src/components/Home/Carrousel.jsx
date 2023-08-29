@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { Box, Button, Card, CardMedia, FormControl, FormGroup, FormHelperText, Grid, IconButton, Input, InputAdornment, InputLabel, OutlinedInput, TextField, Modal, Typography } from '@mui/material'
 import { ArrowBack, ArrowForward, ChevronLeft, ChevronRight } from '@mui/icons-material';
 const Carrousel = () => {
+    const navigate = useNavigate()
+
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
 
-    const images = ['/propaganda5.png','/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
+    const images = ['/propaganda5.png', '/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
     const handlePrevImage = () => {
         setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     };
@@ -15,7 +18,14 @@ const Carrousel = () => {
     };
 
     const openModal = () => {
-        setModalOpen(true);
+        
+        if ('/propaganda5.png' == images[currentImage]) {
+            navigate('/eventos/pachamanca')
+
+        } else {
+            setModalOpen(true);
+        }
+
     };
 
     const closeModal = () => {
