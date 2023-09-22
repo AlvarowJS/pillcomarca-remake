@@ -1,5 +1,82 @@
 const bdNoticias = [
     {
+        id: 19,
+        titulo: '🔰V taller de Benchmarking de organizaciones comunales🔰',
+        fecha: '21/09/2023',
+        nota: 'La JASS SANTA ROSA DE PITUMAMA, y el Aréa de Saneamiento Básico Integral - ATS, de la Municipalidad Distrital de Pillco vienen participando en los talleres que viene realizando la Superintendencia Nacional de Servicios de Saneamiento (SUNASS)',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D162052870283469%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5167954/standard_IMG-20230921-WA0127.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 18,
+        titulo: 'Por el "Día Mundial Mundial sin automóvil"🚴♀️🚴♂️ Ven y participa a la "GRAN BICICLETEADA"',
+        fecha: '21/09/2023',
+        nota: 'Ejercítate mínimo 30 minutos, durante el día para vivir más y más saludable',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02JzHkgm8RcVEu9NjRfkVALxy7Co1GaUSqaL6HijcEzrG4BvFMxP1Ud1tTPMt3TT7sl&show_text=true&width=500" width="500" height="706" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5166628/standard_WhatsApp%20Image%202023-09-21%20at%2011.55.03%20AM.jpeg'
+            },
+           
+        ]
+    },
+    {
+        id: 17,
+        titulo: '𝐀𝐏𝐎𝐘𝐎 𝐂𝐎𝐍 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 𝐏𝐀𝐑𝐀 𝐓𝐑𝐀𝐁𝐀𝐉𝐎𝐒 𝐃𝐄 𝐑𝐄𝐂𝐔𝐏𝐄𝐑𝐀𝐂𝐈Ó𝐍 𝐃𝐄 𝐄𝐒𝐏𝐀𝐂𝐈𝐎𝐒𝐀𝐏𝐎𝐘𝐎 𝐂𝐎𝐍 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 𝐏𝐀𝐑𝐀 𝐓𝐑𝐀𝐁𝐀𝐉𝐎𝐒 𝐃𝐄 𝐑𝐄𝐂𝐔𝐏𝐄𝐑𝐀𝐂𝐈Ó𝐍 𝐃𝐄 𝐄𝐒𝐏𝐀𝐂𝐈𝐎𝐒',
+        fecha: '15/09/2023',
+        nota: 'Si necesitas información, orientación y consejería sobre hechos de violencia contra las mujeres e integrantes del grupo familiar o si conoces de un caso, llama a la ☎️ #Línea100 desde cualquier parte del país.',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02PjPM4AYocpy3jeaM6ri3dS3XpauEfWbri3GEmHy8o6uPj5v5taHghe1V3u1dcA3Ul&show_text=true&width=500" width="500" height="517" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5118843/standard_20230912_111743.jpg'
+            },
+           
+        ]
+    },
+    
+    {
+        id: 16,
+        titulo: '🔰𝐓𝐑𝐀𝐁𝐀𝐉𝐀𝐍𝐃𝐎 𝐔𝐍𝐈𝐃𝐎𝐒🤝',
+        fecha: '15/09/2023',
+        nota: '👉La Sub Gerencia de Desarrollo Urbano, Rural y Catastro recibieron una Importante Charla por parte de los representantes de COFOPRI, en cuanto al Plan de Desarrollo del trabajo de Diagnóstico de la Informalidad. \n🔰Recordemos que gracias a las gestiones de la alcaldesa la Ing. Diana Plejo Carrillo nuestro distrito es uno de los beneficiarios del Plan de Diagnóstico de la Informalidad por ello en esta charla dieron a conocer algunos puntos importantes a tener en cuenta como: \n✅ COFOPRI titula áreas urbanas que no estén en litigio. \n✅Que tengan vivienda, COFOPRI no formaliza lotes vacíos. \n ✅Tener el DNI del lugar.\n✅Tener más de un año de posesión del terreno \n 𝐋𝐎 𝐌Á𝐒 𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓𝐄, 𝐂𝐎𝐅𝐎𝐏𝐑𝐈 𝐑𝐄𝐀𝐋𝐈𝐙𝐀 𝐓𝐎𝐃𝐎𝐒 𝐋𝐎𝐒 𝐓𝐑𝐀𝐁𝐀𝐉𝐎𝐒 𝐃𝐄 𝐌𝐀𝐍𝐄𝐑𝐀 𝐆𝐑𝐀𝐓𝐔𝐈𝐓𝐀, desde el Plan de Desarrollo del trabajo de diagnóstico de la informalidad hasta el saneamiento (entrega del título de propiedad).',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D158127514009338%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="781" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5119343/standard_20230912_105011.jpg'
+            },
+           
+        ]
+    }, 
+/*    
+    {
+        id: 15,
+        titulo: '𝐈𝐍𝐕𝐈𝐓𝐀𝐂𝐈𝐎́𝐍',
+        fecha: '14/09/2023',
+        nota: '🔰La municipalidad distrital de Pillco Marca te invita a formar parte del Consejo Distrital Juvenil.\n👉A través del cual se busca crear un espacio de reunión y participación integrado por jóvenes.\nDía: sábado 16 de setiembre \nHora: 10:00 am \nLugar: Municipalidad Distrital de Pillco Marca \n🔰𝐋𝐎𝐒 𝐄𝐒𝐏𝐄𝐑𝐀𝐌𝐎𝐒‼️',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02iCQgnVbUJHt9iumTKR7hHywvj8MgfrNfFupnxvf5RLLL7BTWgi6b7gV62CGXbHxul&show_text=true&width=500" width="500" height="540" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/376274707_157640880724668_9029403358543010204_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeEaIPnUuW6D--Fa_CvNe92z710vcNEB9JLvXS9w0QH0ktO1ytELSOALjJc5Qi26euQFigZHBUraA1TEGqiES6vB&_nc_ohc=0ESWjU7Ijv4AX-ZkD7v&_nc_oc=AQnMDvgt6Mu9UQSwhXXbNdo3HQepQvL1pQcrtOrhwhqtkJKloIZH90dg2igY93C8xTIdkOcW8dotqLaSfYJiIJeI&_nc_ht=scontent.flim13-1.fna&oh=00_AfAgsbRW4nd2rgg9oz0bN1PoZCSvvJYV8FcPgAUWb001DQ&oe=65093CC9'
+            },
+           
+        ]
+    },
+    {
         id: 14,
         titulo: 'violencia contra las mujeres e integrantes del grupo familiar o si conoces de un caso, llama a la ☎️ #Línea100',
         fecha: '29/08/2023',
@@ -9,7 +86,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368351269_147513015070788_3802271069880046158_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nFjYJL7g264AX_1jffn&_nc_ht=scontent.flim9-1.fna&oh=00_AfDicXKAdkZ8x3Uw8TjK6cSyLDKe-bCUih_g2X2vow_9tw&oe=64F34E05'
+                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368351269_147513015070788_3802271069880046158_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHQiZZ57fdMCkDasdFT339RcgUPz_cEgE5yBQ_P9wSATpFRcVvPSH7bb0rr_AjwSLV1HK7oc9IZ2RPqi9vaRKwE&_nc_ohc=aNPxOLWFv_kAX-4wxJZ&_nc_ht=scontent.flim9-1.fna&oh=00_AfCvKkQQaolclrOa6JTRRH6PaW6XxEOrfsvgGDv6V7DkDA&oe=65090EC5'
             },
            
         ]
@@ -24,7 +101,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/370543009_147147791773977_1225570822887655492_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qgurCnuQZGMAX-nEVi8&_nc_ht=scontent.flim8-1.fna&oh=00_AfBr4tcT8B2mq7mvHyhLB2_MX_A33L-7-7ApXyeBzzWnAA&oe=64F2B341'
+                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/371323989_146497425172347_3818870575078244332_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeG09Ps4NNsAyGdLVdz_Do9ccqpz41H1EXdyqnPjUfURd0cs13ADlaBny20idEhV4F6vxvnsgWgwfqr7BjYkTm_4&_nc_ohc=LuFDtWjh3OgAX8xeivW&_nc_ht=scontent.flim13-1.fna&oh=00_AfAunkt9mlXONdWGrii5WV68Yr3PeigqHdhukPfrrukviQ&oe=65099BF1'
             },
            
         ]
@@ -39,12 +116,12 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/371323989_146497425172347_3818870575078244332_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=MabdRQhQwb0AX99FXcS&_nc_ht=scontent.flim13-1.fna&oh=00_AfAAz0AsKZmjERO3A9tG2dbv5UMUKP2zutmznbI5_KRCzw&oe=64F3DB31'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/371443686_146497535172336_2945626882210847549_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHK8-QdGAIpagU25-aQ98yjV-eQuej-br5X55C56P5uvpvq7i_K2X4b1nqQUt34ZLykQR4kf5T6xei-0vZGK5xy&_nc_ohc=spRHiQBu4QcAX-XR6uC&_nc_ht=scontent.flim8-1.fna&oh=00_AfAUw792mPoc6xAeVJJVRmVJ_dlLP9lV0gr2_nhq_-Ay_Q&oe=650908F6https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/371443686_146497535172336_2945626882210847549_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHK8-QdGAIpagU25-aQ98yjV-eQuej-br5X55C56P5uvpvq7i_K2X4b1nqQUt34ZLykQR4kf5T6xei-0vZGK5xy&_nc_ohc=spRHiQBu4QcAX-XR6uC&_nc_ht=scontent.flim8-1.fna&oh=00_AfAUw792mPoc6xAeVJJVRmVJ_dlLP9lV0gr2_nhq_-Ay_Q&oe=650908F6'
             },
             {
                 id: 2,
                 nombre: 'foto2',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/371359373_146497695172320_5024262691126302105_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=c4rZdC3JJ8EAX-rdx33&_nc_ht=scontent.flim8-1.fna&oh=00_AfCKPYZ9lp3CcSTCE36Q0hBXdKdqlGkAB2ZBKtXt9mZY_g&oe=64F2A937'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/371443686_146497535172336_2945626882210847549_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHK8-QdGAIpagU25-aQ98yjV-eQuej-br5X55C56P5uvpvq7i_K2X4b1nqQUt34ZLykQR4kf5T6xei-0vZGK5xy&_nc_ohc=spRHiQBu4QcAX-XR6uC&_nc_ht=scontent.flim8-1.fna&oh=00_AfAUw792mPoc6xAeVJJVRmVJ_dlLP9lV0gr2_nhq_-Ay_Q&oe=650908F6'
             },
         ]
     },
@@ -58,12 +135,12 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/370185006_145003341988422_3166201075078951058_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ILlrx57TAV8AX_ovqnm&_nc_ht=scontent.flim8-1.fna&oh=00_AfAuiAzfErN9zC8h6AlDL5_n_A50eW1NZYNoaSo6BNV4Xw&oe=64F33FD0'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/370185006_145003341988422_3166201075078951058_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeFxLUtp-wB6XYLd6LcVqS5kBS3Zduzxx9kFLdl27PHH2W9UFdZwV6mTx0gzrDTRotoh7IwnF3_9E5Wamevz44cA&_nc_ohc=zYhUFyQYAyUAX-qKPba&_nc_ht=scontent.flim8-1.fna&oh=00_AfBmU1GyK9GAqFMzFo0zQGtPo9s6JhjQBOuZeGU7tu6qyg&oe=65090090'
             },
             {
                 id: 2,
                 nombre: 'foto2',
-                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/370362467_145003378655085_1444938649352275252_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=GWun3jKvpwoAX9vla1P&_nc_ht=scontent.flim13-1.fna&oh=00_AfB8pRFHcN-w73eue24Wk0v1YBUW5VQp2r4VC4Owiu8rcQ&oe=64F331B7'
+                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/370362467_145003378655085_1444938649352275252_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGjx3nOtI74T5qjfFLKIXCm5WJGwTrdTILlYkbBOt1MgpaQ2eANpQAKpjDsJtJ08U6ZubzZO_GB0wwaDZ-hhXbQ&_nc_ohc=C7XNtNJdQIAAX-12vKX&_nc_ht=scontent.flim13-1.fna&oh=00_AfDUf94njnX9U335VPqZVQgOQf7rOwHKkfSiWXsA3lO6mQ&oe=6508F277'
             }
         ]
     },
@@ -78,7 +155,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/369900943_144828758672547_724066968296976261_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=2hwDvgcD1boAX8F4Ql9&_nc_ht=scontent.flim8-1.fna&oh=00_AfCqmeBb5VUfFiNsHue-JGYmM2x3j4kWWmWmM0kHjaatVQ&oe=64F3B3DC'
+                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/369859480_144828738672549_4934928423427087947_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHlXzQH6aI86oMTTmE7jApwramtzyygsbOtqa3PLKCxs-oUNPJ02JlroBoWfEngN54HfpcKkuajAsgMNuStDWTi&_nc_ohc=uw6giudOANwAX8ViAoN&_nc_ht=scontent.flim13-1.fna&oh=00_AfDCVki21cGYoWvgOMnDNkSm8woU3o3uex7ZZY8HOZFYcQ&oe=65095092'
             },
             {
                 id: 2,
@@ -116,7 +193,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367477627_144672742021482_1672579601117270856_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=N8SGIVGDF94AX_-feBf&_nc_ht=scontent.flim8-1.fna&oh=00_AfAjYMSmjiv8w78SHm5g8mB_kdThADoGNW962omOG2jp0g&oe=64F3A27A'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367098799_144672672021489_8571510591527112338_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGt10iCVrSjU1e7Fbq2fC1cCQ7aRUzFDn0JDtpFTMUOfSanZ1pALtNCHCG7Frdnk9eEQOdu73N1JQv2xdxI8wFD&_nc_ohc=ee7QJLqA9iEAX-t-zFS&_nc_oc=AQkIv2A79Kh4eBJ0XNDlK2QicNJ-C8FY12_96BN_NewsgcWkR_x6prHuG2A11aYqTuxIyK3xzQ5Dm0nrsrq67pzl&_nc_ht=scontent.flim8-1.fna&oh=00_AfADYBKZf-Ylgut20Nw4w-3YVKRyZxDPAECKwGByGuvJiA&oe=650958AA'
             },
             {
                 id: 2,
@@ -136,7 +213,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367495160_144552235366866_1009488299770498059_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG7F_YSUAH0rDcw_eMdRZOjGjkEyg9jn_UaOQTKD2Of9XEImlX76Ol_EP6XJsIVncc5AMFOD3OLu6_yIoXOzeB7&_nc_ohc=2gnyiRungdYAX_Z7WQM&_nc_ht=scontent.flim8-1.fna&oh=00_AfB0lZlLQdpnAWC9chxPOmNXVNHh1CZbpwJaCknDeeNEuw&oe=64EE496D'
+                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/367482357_144552405366849_2837583995399185651_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeEcr7eQuTY1SMuLjm_phqDotBX3vsjv5T60Ffe-yO_lPigc3NFYW9ISMPs_oRiBf0GpnA0VypibM7-69jrsBfO7&_nc_ohc=6dzeVZ0fFi0AX8zAZF1&_nc_ht=scontent.flim13-1.fna&oh=00_AfC5Fvr5Vb7dVIIqP55_SLdYvslZpt_gE1aK5WK2_JvvEg&oe=6509F3B4'
             },
             {
                 id: 2,
@@ -162,7 +239,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim13-1.fna.fbcdn.net/v/t39.30808-6/366728253_142735902215166_8265643988285021474_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=H4hVdAmGIXQAX8jxQcO&_nc_ht=scontent.flim13-1.fna&oh=00_AfCKzdM7tuvDNcgfMgu5GEkTCfXotwIEYP7mQZ-RayqjFA&oe=64F23008'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367018644_142735495548540_6805407791701932432_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeEt9ih_u0ee1rWxpptMXDVZgfLqHh3SAeGB8uoeHdIB4VGhkcY-UDKCFAf219Bt_cK5do-LTURMO1UODBkdZYgQ&_nc_ohc=oHyT5WR7x2cAX8q7Y_t&_nc_ht=scontent.flim8-1.fna&oh=00_AfDyUJ-oZzpB1UbVyfcpECWNuEeUgqtBAvA4XRSZtPLMMQ&oe=6508FB1C'
             },
             {
                 id: 2,
@@ -181,7 +258,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367424504_141112102377546_4073281996837097032_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9tVoGmhGhkcAX-gOnls&_nc_ht=scontent.flim8-1.fna&oh=00_AfDYkijQJsrXEhqthgYVcNQ8D3ET0n_qMad9skHk3E_CMg&oe=64F3A93C'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/367424504_141112102377546_4073281996837097032_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGo8oIeE59iVVVpVl5mOcncLqjAG5ylOc0uqMAbnKU5zXAlYE8a3zn9UHMPE0-YgTw5ebCHUmYeLF1XQ0Gqa_dO&_nc_ohc=uEVWVsbLNxkAX8YSMNM&_nc_ht=scontent.flim8-1.fna&oh=00_AfCgGRZIi3LZJD1HiQ4Lj0Fn1EZkiIGpX1ziI222B9ZgSQ&oe=650969FC'
             },
             {
                 id: 2,
@@ -200,7 +277,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/368638603_141003845721705_4154361424963554824_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Q98Yldx5NeQAX-VZjFv&_nc_oc=AQmvw9Yo63b_U-WxfUYw17E4NW8ncMHuB0yrADbFwhTDbaWKqpfMlpM5QJjjUjAW1gkFeeCWbB9xZzjjRbiTptN-&_nc_ht=scontent.flim8-1.fna&oh=00_AfBazdbH-d-jCA6yhaMsbU2YpsNXW_7V58sJX6W4Es8V_g&oe=64F210AC'
+                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368635316_141003742388382_2583519055600445014_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGXFXrCT-acfCtacxVp7ERLId0u6MqJPXgh3S7oyok9eMgwtWyVsUXyq5kwqp4K8NtgcgA8q2n6yIiWSF0CTuSj&_nc_ohc=NW6jMu3eyyoAX8Sgkp6&_nc_ht=scontent.flim9-1.fna&oh=00_AfD4c46doBNFdGZT4_vdlFyT803hKXSkfyFfHvoBzoSQcw&oe=6509F8AFhttps://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368635316_141003742388382_2583519055600445014_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGXFXrCT-acfCtacxVp7ERLId0u6MqJPXgh3S7oyok9eMgwtWyVsUXyq5kwqp4K8NtgcgA8q2n6yIiWSF0CTuSj&_nc_ohc=NW6jMu3eyyoAX8Sgkp6&_nc_ht=scontent.flim9-1.fna&oh=00_AfD4c46doBNFdGZT4_vdlFyT803hKXSkfyFfHvoBzoSQcw&oe=6509F8AF'
             },
             {
                 id: 2,
@@ -219,7 +296,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/366290994_140328142455942_1598743165927304570_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Pc76xZ2XRU8AX98gDmF&_nc_ht=scontent.flim8-1.fna&oh=00_AfA6Yqv6NgqvUVFDY6ecjHVbRtWJdsMEHuEr2Y_M1hJIfg&oe=64F379BF'
+                foto: 'https://scontent.flim8-1.fna.fbcdn.net/v/t39.30808-6/366290994_140328142455942_1598743165927304570_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeE0aAH6gM2xarONnVWZ-OnP12vFpH1BPC3Xa8WkfUE8LQ1qnjbBdmRF4vk77E0-yFtvf6b6QzqvU5IGITbY88Vx&_nc_ohc=5FaZ001HvPEAX9YAv3G&_nc_ht=scontent.flim8-1.fna&oh=00_AfAXxQRSmrmRSO1CsROi5NjQRQe_jaEtax-B1Xsj8wPKLg&oe=65093A7F'
             },
             {
                 id: 2,
@@ -238,7 +315,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368515299_140214725800617_6859922989021444570_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFeoFCJBQJ2-sYpgHZBjVZvprGdMH5pSKqmsZ0wfmlIqrkk2KteuL5MqjwnulLJYi_0a0P3j-u9t-nV28T_L8o4&_nc_ohc=lGWLtVLyIGsAX9RX1d3&_nc_ht=scontent.flim9-1.fna&oh=00_AfBKuMTcERAjUU6byPLkZG45AWOxVBJ1aXdTV3vMRccFAg&oe=64EE8AC9'
+                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368515299_140214725800617_6859922989021444570_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHt4f7Y6A934GNwu0wXgrTDprGdMH5pSKqmsZ0wfmlIquUwLKXuxHLBguFuvt-gKNO8nA6jQ8ssBv0CrUaA3iqR&_nc_ohc=F_lhQQkgPQEAX9DD2Nt&_nc_oc=AQlfSy2sW4HzL6Gn7v013-6VCMPl4t9ddo6xnb9epzWfPHRB0hWQfMqM577rbEiWMCG0ixbfwkS90KdqE8uDE76q&_nc_ht=scontent.flim9-1.fna&oh=00_AfDwpqFvhSp6KZgQM6NgAX6MnHAiu_WqZybcdQztZSlWCw&oe=650A3A49'
             },
             {
                 id: 2,
@@ -258,7 +335,7 @@ const bdNoticias = [
             {
                 id: 1,
                 nombre: 'foto1',
-                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368170180_139606312528125_8687511131195541512_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHbl9bsbFd8oAgS9sIQ5-YlzY2bQ1gaslfNjZtDWBqyVzA1Xx35ZwsZx8pfEX7nkTU_Ez_YkcTJJifGdxzzR9SW&_nc_ohc=qki4zJf8Y-UAX9jkJ4T&_nc_ht=scontent.flim9-1.fna&oh=00_AfCLZrqmguZVTSgM-tY23_J70Cj4lRxPDev5VvdTLvv0Rw&oe=64EE9656'
+                foto: 'https://scontent.flim9-1.fna.fbcdn.net/v/t39.30808-6/368170180_139606312528125_8687511131195541512_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeGjky4BFN1pEYs92mWeh0z7zY2bQ1gaslfNjZtDWBqyV2amkToul7rWMdMpskaPlt2XmAgDRzCTPyNKNTeO3Tp9&_nc_ohc=a2ynHi1ka10AX9K5I3z&_nc_ht=scontent.flim9-1.fna&oh=00_AfB68EmSz_tx4CNAFaWVR9HhSKobVGHBxDfssRretw8yRw&oe=650A45D6'
             },
             {
                 id: 2,
@@ -267,7 +344,7 @@ const bdNoticias = [
             }
         ]
     }
-
+*/
 
 ]
 

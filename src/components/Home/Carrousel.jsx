@@ -8,7 +8,7 @@ const Carrousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
 
-    const images = ['/propaganda5.png', '/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
+    const images = ['/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
     const handlePrevImage = () => {
         setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     };
@@ -17,16 +17,14 @@ const Carrousel = () => {
         setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     };
 
-    const openModal = () => {
+   const openModal = () => {
         
-        if ('/propaganda5.png' == images[currentImage]) {
-            navigate('/eventos/pachamanca')
-
-        } else {
-            setModalOpen(true);
-        }
+       
+        setModalOpen(true);
+        
 
     };
+
 
     const closeModal = () => {
         setModalOpen(false);
@@ -35,7 +33,7 @@ const Carrousel = () => {
         <>
             <Grid container sx={{ marginTop: 10 }}>
                 <Grid item md={1} xs={2}>
-                    <IconButton onClick={handlePrevImage} sx={{ backgroundColor: '#28274D', color: 'white', top: '45%', left: { xs: '15%', sm: '40%', md: '30%', lg: '50%', xl: '85%' } }}>
+                    <IconButton onClick={handlePrevImage} sx={{ backgroundColor: '#28274D', color: 'white', top: '45%', left: { xs: '15%', sm: '40%', md: '30%', lg: '50%', xl: '63%' } }}>
                         <ChevronLeft sx={{ fontSize: 40 }} />
                     </IconButton>
                 </Grid>

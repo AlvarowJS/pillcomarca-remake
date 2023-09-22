@@ -17,7 +17,7 @@ import Seguridad from '../pages/Seguridad/Seguridad'
 import MesaPartes from '../pages/MesaPartes/MesaPartes'
 import Noticias from '../pages/Noticias/Noticias'
 import NoticiaNota from '../pages/Noticias/NoticiaNota'
-import Pachamanca from '../pages/Evento/Pachamanca'
+
 const AppRouter = () => {
 
   const [menu, setMenu] = useState(false)
@@ -52,7 +52,7 @@ const AppRouter = () => {
             {/* <Route path='/ubicanos' element={<Ubicanos />} /> */}
             <Route path='/organigrama' element={<Organigrama />} />
 
-            <Route path='/eventos/pachamanca' element={<Pachamanca />} />
+            
           </Routes>
           <Footer />
 

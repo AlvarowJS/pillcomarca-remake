@@ -9,10 +9,13 @@ const Convocatoria = () => {
             <Box sx={{ marginTop: 12 }}>
                 <Box sx={{
                     backgroundColor: '#12B1FA',
-                    width: '50%',
+                    width: '80%',
                     borderTopRightRadius: 10,
                     borderBottomRightRadius: 10,
-                    marginBottom: 3
+                    marginBottom: 3,                   
+                    '@media screen and (min-width: 768px)': { // Media query para dispositivos grandes (ajusta el valor según sea necesario)
+                        width: '30%',
+                    },
                 }}>
                     <h1 style={{ color: 'white', paddingLeft: 10 }}>
                         <Work />
