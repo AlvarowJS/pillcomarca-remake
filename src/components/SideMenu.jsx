@@ -154,7 +154,7 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                             <ListItemText primary={'Noticias'} />
                         </ListItem>
                     </NavLink>
-                    <NavLink to='/' onClick={handleBackdropClick}>
+                    <NavLink to='/convocatoria' onClick={handleBackdropClick}>
                         <ListItem button>
                             <ListItemText primary={'Convocatoria'} />
                         </ListItem>
