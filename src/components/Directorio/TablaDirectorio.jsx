@@ -1,14 +1,13 @@
 import React from 'react'
 import DataTable from 'react-data-table-component'
 import { Box, Button, Typography } from '@mui/material'
+import {bdDirectorio} from '../../api/bdDirectorio.js'
 
-// marko estubo aqui
-const bdDirectorio = require('./api/bdDirectorio');
+//console.log(bdDirectorio)
 
-
-const datos = bdDirectorio.obtenerDatosDirectorio();
 
 const TablaDirectorio = () => {
+    /*
     const directorioData = [
         { id: 1, nombres: 'Yurik Rosales Bravo', numero: '979505074', correo: 'gpyp@munipillcomarca.gob.pe', cargo: 'Gerente', area: 'Planeamiento y Presupuestos' },
         { id: 2, nombres: 'Edwing R. Marrtinez Vasquezo', numero: '969400968', correo: 'gpyp@munipillcomarca.gob.pe', cargo: 'Gerente', area: 'Administración' },
@@ -17,6 +16,10 @@ const TablaDirectorio = () => {
         { id: 5, nombres: 'Hebert Javier Remuzgo Robles', numero: '958545849', correo: 'recursoshumanos@munipillcomarca.gob.pe', cargo: 'Sub Gerente', area: 'Recursos Humanos' },        
 
     ]
+    */
+   // marko estubo aqui
+    const directorioData = bdDirectorio;
+    // 
     const columns = [
         {
             minWidth: '300px',
