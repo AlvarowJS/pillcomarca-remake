@@ -152,6 +152,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/organigrama' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Organigrama</MenuItem>
                             </NavLink>
+                            <NavLink to='/registro-visitas' style={{ color: 'black' }}>
+                                <MenuItem onClick={handleCloseMenu}>Registro de visitas</MenuItem>
+                            </NavLink>
                         </Menu>
                         <Menu
                             anchorEl={documentsAnchorEl}

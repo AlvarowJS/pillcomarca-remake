@@ -17,6 +17,7 @@ import Seguridad from '../pages/Seguridad/Seguridad'
 import MesaPartes from '../pages/MesaPartes/MesaPartes'
 import Noticias from '../pages/Noticias/Noticias'
 import NoticiaNota from '../pages/Noticias/NoticiaNota'
+import Visitas from '../pages/Visitas/Visitas'
 
 const AppRouter = () => {
 
@@ -51,6 +52,7 @@ const AppRouter = () => {
             <Route path='/mesa-partes' element={<MesaPartes />} />
             {/* <Route path='/ubicanos' element={<Ubicanos />} /> */}
             <Route path='/organigrama' element={<Organigrama />} />
+            <Route path='/registro-visitas' element={<Visitas />} />
 
             
           </Routes>
