@@ -2,6 +2,12 @@ import React from 'react'
 import DataTable from 'react-data-table-component'
 import { Box, Button, Typography } from '@mui/material'
 
+// marko estubo aqui
+const bdDirectorio = require('./api/bdDirectorio');
+
+
+const datos = bdDirectorio.obtenerDatosDirectorio();
+
 const TablaDirectorio = () => {
     const directorioData = [
         { id: 1, nombres: 'Yurik Rosales Bravo', numero: '979505074', correo: 'gpyp@munipillcomarca.gob.pe', cargo: 'Gerente', area: 'Planeamiento y Presupuestos' },
