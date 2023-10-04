@@ -23,7 +23,7 @@ const Noticias = () => {
           Noticias
         </h1>
       </Box>
-      <Grid container spacing={4} marginY={5} paddingX={10}>
+      <Grid container spacing={4} marginY={5} paddingX={{ xs: 3, md: 10 }}>
         {
           bdNoticias?.map(noticia => (
             <NoticiaCard
