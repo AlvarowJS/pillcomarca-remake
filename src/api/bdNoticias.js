@@ -1,5 +1,65 @@
 const bdNoticias = [
     {
+        id: 23,
+        titulo: '🔰Limpieza de canales y retiro de desmontes ‼️',
+        fecha: '28/09/2023',
+        nota: 'Limpieza de canales de desagüe del jr. Gutarra con la av. Universitaria',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D166024593219630%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5226766/standard_383165904_166024843219605_1921217180996865066_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 22,
+        titulo: '🔰𝐄ntrega 𝐃e Viveres a las Ollas Comunes‼️',
+        fecha: '28/09/2023',
+        nota: 'Se realizaron las capacitaciones en limpieza y desinfección en el JASS de San pedro de Viczacocha',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D166656816489741%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="761" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5225865/standard_385049559_166657519823004_4551899431147505704_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 21,
+        titulo: '‼️🔰𝐀tendiendo prioridades🔰‼️',
+        fecha: '28/09/2023',
+        nota: 'Se realizaron las capacitaciones en limpieza y desinfección en el JASS de San pedro de Viczacocha',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D165996083222481%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="717" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5226857/standard_384524115_165996709889085_4283946909577905732_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 20,
+        titulo: '🔰Trabajos unidos 🤝',
+        fecha: '28/09/2023',
+        nota: 'La Dirección de Trabajo y Promoción del Empleo Huánuco, brindó la Capacitación sobre la Implementación de la Política para la Prevención y Erradicación del trabajo Infantil',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D166063913215698%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5226330/standard_383968494_166064506548972_8008110291810727635_n.jpg'
+            },
+           
+        ]
+    },
+    {
         id: 19,
         titulo: '🔰V taller de Benchmarking de organizaciones comunales🔰',
         fecha: '21/09/2023',
