@@ -9,7 +9,10 @@ const TablaConvocatoria = () => {
     const [convocatorias, setConvocatorias] = useState()
     useEffect(() => {
         bdMuni.get('/v1/convocatoria')
-            .then(res => setConvocatorias(res.data))
+            .then(res => {
+                const sortedData = res.data.sort((a, b) => b.id - a.id); // Sort in descending order
+                setConvocatorias(sortedData)
+            })
             .catch(err => console.log(err))
 
     }, [])
@@ -24,16 +27,38 @@ const TablaConvocatoria = () => {
                             style={{}}
                         >  {row?.nombre}
                         </h3>
-                        <Button
-                            style={{
-                                marginBottom: 4, marginTop: 4,
-                                backgroundColor: '#FA353F', color: 'white',
-                                paddingLeft: 30, paddingRight: 20,
-                                border: '1px solid red', borderRadius: 5
-                            }}
-                        >
-                            {row?.estado}
-                        </Button>
+
+                        {
+                            row?.estado == 'activo' ?
+                                (
+                                    <Button
+                                        style={{
+                                            marginBottom: 4, marginTop: 4,
+                                            backgroundColor: '#00B80B', color: 'white',
+                                            paddingLeft: 30, paddingRight: 20,
+                                            border: '1px solid #00B80B', borderRadius: 5
+                                        }}
+                                    >
+                                        {row?.estado}
+                                    </Button>
+
+                                )
+                                : (
+                                    <Button
+                                        style={{
+                                            marginBottom: 4, marginTop: 4,
+                                            backgroundColor: '#FA353F', color: 'white',
+                                            paddingLeft: 30, paddingRight: 20,
+                                            border: '1px solid red', borderRadius: 5
+                                        }}
+                                    >
+                                        {row?.estado}
+
+                                    </Button>
+
+                                )
+                        }
+
                     </div>
                 )
             }
@@ -52,7 +77,7 @@ const TablaConvocatoria = () => {
                                 {/* <button className='btn btn-success' onClick={() => window.location.href = item.archivo}> */}
                                 <Button
                                     style={{
-                                        
+
                                         marginBottom: 4, marginTop: 4,
                                         backgroundColor: 'white', color: '#10A1EA',
                                         paddingLeft: 30, paddingRight: 20,
