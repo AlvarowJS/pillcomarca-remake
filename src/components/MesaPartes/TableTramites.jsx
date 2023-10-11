@@ -369,7 +369,7 @@ const TableTramites = () => {
     return (
         <Box sx={{ marginTop: 2, overflowX: 'auto', paddingX: 5 }}>
             <Typography>
-                En la siguiente página podrá ver todos los procedimientos que desee realizar. Una vez identificado el procedimiento que quiera llevar a cabo, debe tener todos los documentos que requiere, los requisitos, en un solo archivo para cargarlo en la
+            En la siguiente página, podrá ver todos los procedimientos que desee realizar. Una vez identificado el procedimiento que desee llevar a cabo, debe contar con todos los documentos que se requieran, así como los requisitos, en un solo archivo para cargarlo en la
                 <a onClick={mesaPartes} style={{
                     color: 'skyblue',
                     cursor: 'pointer'
@@ -377,11 +377,11 @@ const TableTramites = () => {
 
             </Typography>
             <Typography>
-                Recuerde que las solicitudes se hacen con el
+            Recuerde que las solicitudes se realizan a través del
                 <a onClick={fut} style={{
                     color: 'skyblue',
                     cursor: 'pointer'
-                }}> FUT </a> Para luego escanearlo y subirlo con lo que se requiere según su trámite.
+                }}> FUT </a> y posteriormente deben ser escaneadas y subidas junto con los documentos requeridos correspondientes a su trámite.
             </Typography>
             <Button sx={{
                 backgroundColor: '#12B1FA',
