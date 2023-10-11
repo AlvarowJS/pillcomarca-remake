@@ -46,7 +46,7 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
 
                 <Toolbar sx={{
                     boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)'
-                    
+
                 }}>
                     <NavLink to='/' >
                         <img
@@ -200,14 +200,13 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                     </Box>
                     <Box flex={1} />
                     <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' } }}>
-                        <NavLink to='/convocatoria' >
-                            <Link>
-                                <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
-                                    <PersonIcon />
-                                    SysDoc
-                                </Button>
-                            </Link>
-                        </NavLink>
+
+                        <Link>
+                            <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                                <PersonIcon />
+                                SysDoc
+                            </Button>
+                        </Link>
                     </Box>
 
                     <Box sx={{ marginX: 3, display: { xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' } }}>
