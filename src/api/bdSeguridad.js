@@ -11,6 +11,11 @@ export const bdSeguridad = [
                         id: 1,
                         nombre: 'Directorio de los Miembros del CODISEC Pillco Marca - 2023',
                         documento: 'https://cdn.www.gob.pe/uploads/document/file/5264237/DIRECTORIO%20DE%20LOS%20MIEMBROS%20DEL%20CODISEC%20PILLCO%20MARCA%20-%202023.pdf?v=1697058204'
+                    },
+                    {
+                        id: 2,
+                        nombre: 'Directorio de los Miembros del CODISEC Pillco Marca - 2023 - Actualizado',
+                        documento: 'https://cdn.www.gob.pe/uploads/document/file/5268804/4732380-directorio-de-integrantes-codisec-16-actualizado.pdf?v=1697129345'
                     }
                 ]
             }
@@ -78,6 +83,27 @@ export const bdSeguridad = [
                         documento: 'https://cdn.www.gob.pe/uploads/document/file/5261713/ACTA%20-%205TA.%20SESION%20ORDINARIA.pdf?v=1697043322'
                     }
                 ]
+            },
+            {
+                id: 4,
+                nombre: 'Actas de Audiencias 2023',
+                archivos: [
+                    {
+                        id: 10,
+                        nombre: 'ACTA 1ra Audiencia Pública de CODISEC Pillco Marca 2023',
+                        documento: 'https://cdn.www.gob.pe/uploads/document/file/5268621/4735537-acta-i-audiencia-publica.pdf?v=1697128503'
+                    },
+                    {
+                        id: 11,
+                        nombre: 'ACTA 2da Audiencia Pública de CODISEC Pillco Marca 2023',
+                        documento: 'https://cdn.www.gob.pe/uploads/document/file/5268627/4735543-acta-ii-audiencia-publica.pdf?v=1697128564'
+                    },
+                    {
+                        id: 12,
+                        nombre: 'ACTA 3ra Audiencia Pública de CODISEC Pillco Marca 2023',
+                        documento: 'https://cdn.www.gob.pe/uploads/document/file/5268634/4735550-acta-iii-audiencia-publica.pdf?v=1697128604'
+                    }
+                ]
             }
         ]
     },
@@ -86,11 +112,11 @@ export const bdSeguridad = [
         categoria: 'Plan',
         coleccion: [
             {
-                id: 4,
+                id: 5,
                 nombre: 'Plan de Acción Distrital',
                 archivos: [
                     {
-                        id: 10,
+                        id: 13,
                         nombre: 'Plan de Acción Distrital de Seguridad Ciudadana 2023',
                         documento: 'https://cdn.www.gob.pe/uploads/document/file/5264033/PLAN%20DE%20ACCION%20DISTRITAL%20DE%20SEGURIDAD%20CIUDADANA%20%202023%20.pdf?v=1697057831'
                     },
