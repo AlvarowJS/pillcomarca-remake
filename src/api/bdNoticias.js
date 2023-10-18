@@ -16,6 +16,51 @@ const bdNoticias = [
         ]
     },
     */
+   {
+        id: 30,
+        titulo: '🔰𝐓aller Descentralizado fase 2- diagnostico turístico local‼️',
+        fecha: '12/10/2023',
+        nota: 'La gerencia de Infraestructura y área de turismo de nuestra municipalidad fueron participes del Taller Descentralizado de Fase 2 que se realizó en las instalaciones de la Municipalidad Distrital de Kichki',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D174908438997912%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5290234/standard_851547-391710915_174915858997170_3821277109904214131_n.jpg'
+            },
+           
+        ]
+    },
+   {
+        id: 29,
+        titulo: '🔰𝐌as apoyo a nuestro hermanos🤝',
+        fecha: '12/10/2023',
+        nota: 'Se entregó, 5 bolsas de cemento y 10 planchas de calamina al comedor popular "El Buen Samaritano de Huanca Rumi"',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid0hGUkHwoQ49oqdGSczWwcLZtpQdvvorJMfrova9ZWJpwgNrQasUZSeHPmg6xkae7ul&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5297529/standard_852345-391684608_175112745644148_7985227375554127062_n-1.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 28,
+        titulo: '🔰𝐑ecuperación de los servicios de protección de los ecosistemas',
+        fecha: '12/10/2023',
+        nota: 'Se puso la primera piedra para la construcción del vivero más grande de la región con una inversión de más de 4 millones',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D175040328984723%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5290485/standard_851558-391720067_175040462318043_4627646644285742657_n.jpg'
+            },
+           
+        ]
+    },
     {
         id: 27,
         titulo: '🔰Por un Distrito mas seguro‼️',
