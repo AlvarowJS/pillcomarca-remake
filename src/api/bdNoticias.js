@@ -1,4 +1,81 @@
 const bdNoticias = [
+    /* modelo:
+     {
+        id: 27,
+        titulo: '🔰Por un Distrito mas seguro‼️',
+        fecha: '10/10/2023',
+        nota: '',
+        referencia: '',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: ''
+            },
+           
+        ]
+    },
+    */
+    {
+        id: 27,
+        titulo: '🔰Por un Distrito mas seguro‼️',
+        fecha: '10/10/2023',
+        nota: '👉La municipalidad distrital de Pillco Marca representada por nuestra alcaldesa la Ing. Diana Plejo Carrillo tomo juramento a la Junta Vecinal "El Mirador", ubicado en Arcorragra',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D173820212440068%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5260053/standard_386759841_173820302440059_6314377538026891437_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 26,
+        titulo: '🔰𝐓rabajando 𝐔nidos🤝',
+        fecha: '10/10/2023',
+        nota: 'La alcaldesa de nuestra municipalidad sostuvieron una reunión de coordinación con el Presidente del JASS',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02nLFVxVJNuBiG1svDiSXuFqYr1fkyxcyanNZyQ3jhDgFtoCbpRDEkeqwzb2GLxKoWl&show_text=true&width=500" width="500" height="440" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5259386/standard_391606944_173746679114088_6797309223566977231_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 25,
+        titulo: 'Visita del Señor de Burgos',
+        fecha: '10/10/2023',
+        nota: 'Este viernes 20 de Octubre nos visitara el Señor de Burgos a la Municipalidad Distrital de Pillco Marca',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D172391362582953%26set%3Da.114072075081549&show_text=true&width=500" width="500" height="386" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5250349/standard_WhatsApp%20Image%202023-10-10%20at%208.32.51%20AM.jpeg'
+            },
+           
+        ]
+    },
+    {
+        id: 24,
+        titulo: '𝐕𝐀𝐂𝐔𝐍𝐀𝐂𝐈Ó𝐍 𝐀𝐍𝐓𝐈𝐑𝐑Á𝐁𝐈𝐂𝐀 𝐂𝐀𝐍𝐈𝐍𝐀',
+        fecha: '07/10/2023',
+        nota: 'Invitamos a todos los vecinos del distrito de Pillco Marca a participar en esta gran campaña de 𝐕𝐀𝐂𝐔𝐍𝐀𝐂𝐈Ó𝐍 𝐀𝐍𝐓𝐈𝐑𝐑Á𝐁𝐈𝐂𝐀 𝐂𝐀𝐍𝐈𝐍𝐀',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D172010465954376%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5250464/standard_387023506_172010915954331_9196521249643021108_n.jpg'
+            },
+           
+        ]
+    },
     {
         id: 23,
         titulo: '🔰Limpieza de canales y retiro de desmontes ‼️',
