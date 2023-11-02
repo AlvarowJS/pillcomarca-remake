@@ -3,7 +3,7 @@ import { Accordion, AccordionSummary, AccordionDetails, Typography, useMediaQuer
 import React, { useState } from 'react'
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const SeguridadArbol = ({ bdSeguridad, setSeleccion }) => {
+const SeguridadArbol = ({ seguridads, setSeleccion }) => {
     const [expandedSeguridad, setExpandedSeguridad] = useState({});
     const [expandedColeccion, setExpandedColeccion] = useState({});
 
@@ -35,7 +35,7 @@ const SeguridadArbol = ({ bdSeguridad, setSeleccion }) => {
     return (
         <>
             <div>
-                {bdSeguridad?.map((seguridad, index) => (
+                {seguridads?.map((seguridad, index) => (
                     <Accordion
                         key={index}
                         expanded={expandedSeguridad[seguridad.categoria]}
@@ -45,23 +45,23 @@ const SeguridadArbol = ({ bdSeguridad, setSeleccion }) => {
                             <Typography>{seguridad.categoria}</Typography>
                         </AccordionSummary>
                         <AccordionDetails xf>
-                            {seguridad.coleccion?.map((coleccion, subIndex) => (
+                            {seguridad?.seguridad_coleccions?.map((coleccion, subIndex) => (
                                 <div key={subIndex}>
                                     <Typography
                                         onClick={() => handleColeccionChange(coleccion.id)}
                                         sx={{ cursor: 'pointer', marginLeft: 4 }}
                                     >
 
-                                        {coleccion.nombre}
+                                        {coleccion.nombre_coleccion}
 
                                         <ArrowDropDown />
                                     </Typography>
                                     {expandedColeccion[coleccion.id] && (
-                                        coleccion.archivos?.map((archivo, sub) => (
+                                        coleccion.seguridad_archivos?.map((archivo, sub) => (
                                             <Typography marginLeft={8} marginY={2} sx={{ cursor: 'pointer' }} key={sub}
                                             onClick={() => abrirDoc(archivo.documento)}
                                             >
-                                                {archivo.nombre}
+                                                {archivo.nombre_archivo}
                                             </Typography>
                                         ))
                                     )}

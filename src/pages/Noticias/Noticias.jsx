@@ -3,11 +3,21 @@ import { Box, Grid } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import NoticiaCard from '../../components/Noticias/NoticiaCard'
 import bdNoticias from '../../api/bdNoticias'
+import bdMuni from '../../api/bdMuni'
 
 
 const Noticias = () => {
 
-  
+  const [noticias, setNoticias] = useState()
+
+  useEffect(() => {
+    bdMuni.get('/v1/noticias')
+      .then(res => {
+        setNoticias(res.data)
+      })
+      .catch(err => console.log(err))
+  }, [])
+
   return (
     <>
       <Box sx={{
@@ -25,7 +35,7 @@ const Noticias = () => {
       </Box>
       <Grid container spacing={4} marginY={5} paddingX={{ xs: 3, md: 10 }}>
         {
-          bdNoticias?.map(noticia => (
+          noticias?.map(noticia => (
             <NoticiaCard
               key={noticia.id}
               noticia={noticia}

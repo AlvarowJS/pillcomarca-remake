@@ -1,13 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SeguridadTabla from '../../components/Seguridad/SeguridadTabla'
 import { LocalPolice, WhatsApp } from '@mui/icons-material'
 import { Box, CardMedia, Grid, Hidden } from '@mui/material'
 import SeguridadArbol from '../../components/Seguridad/SeguridadArbol'
 import bdSeguridad from '../../api/bdSeguridad'
 import SeguridadContenido from '../../components/Seguridad/SeguridadContenido'
+import bdMuni from '../../api/bdMuni'
 
 const Seguridad = () => {
     const [seleccion, setSeleccion] = useState()
+    const [seguridads, setSeguridads] = useState()
+
+    useEffect(() => {
+        bdMuni.get(`/v1/seguridad`)
+        .then(res => {
+          setSeguridads(res?.data)
+        })
+        .catch(err => console.log(err))
+    }, [])
+    
     return (
         <>
             <Box position="relative" width="100%">
@@ -56,12 +67,14 @@ const Seguridad = () => {
             <Grid container padding={2}
                 spacing={5}>
                 <Grid item xs={12} sm={12} md={12} lg={6}>
-                    <SeguridadArbol bdSeguridad={bdSeguridad} setSeleccion={setSeleccion} />
+
+                    <SeguridadArbol seguridads={seguridads} setSeleccion={setSeleccion} />
+
                 </Grid>
 
                 <Grid item  lg={6} sx={{ display: {xs: 'none', sm: 'none', md: 'none', lg: 'block'} }}>
                     <SeguridadContenido
-                        bdSeguridad={bdSeguridad}
+                        seguridads={seguridads}
                         seleccion={seleccion} />
                 </Grid>
             </Grid>
