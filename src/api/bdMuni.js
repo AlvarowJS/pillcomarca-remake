@@ -10,7 +10,7 @@ const bdMuni = axios.create({
 
     // Endpoint VPS
     // baseURL: 'http://161.132.39.123/api'
-    baseURL: 'https://sv-yptplguxwm.cloud.elastika.pe/'
+    baseURL: 'https://sv-yptplguxwm.cloud.elastika.pe/api'
 });
 
 
