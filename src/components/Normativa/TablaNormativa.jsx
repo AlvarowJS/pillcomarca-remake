@@ -11,20 +11,20 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
     useEffect(() => {
         bdMuni.get('/v1/documentonormativa')
             .then(res => {
-                setNormativas(res.data)
+                setNormativas(res.data.data)
             })
             .catch(err => console.log(err))
     }, [])
     useEffect(() => {
         if (normativas) {
-            setFilter(normativas?.filter(e => e.nombre.toLowerCase().indexOf(search?.toLowerCase()) !== -1))
+            setFilter(normativas?.filter(e => e?.attributes?.nombre.toLowerCase().indexOf(search?.toLowerCase()) !== -1))
         }
     }, [search])
 
     useEffect(() => {
         if (normativas) {
             const filteredNormativas = normativas?.filter(e => {
-                const yearFromFecha = parseInt(e.fecha.split('/')[2]);
+                const yearFromFecha = parseInt(e?.attributes?.fecha.split('/')[2]);
                 return yearFromFecha == selectYear;
             });
             setFilter(filteredNormativas)
@@ -33,7 +33,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
 
     useEffect(() => {
         if (normativas) {
-            setFilter(normativas?.filter(e => e?.tipodedocumento_id == selectedOption));
+            setFilter(normativas?.filter(e => e?.attributes?.Tipodedocumento?.id == selectedOption));
         }
     }, [selectedOption])
 
@@ -54,7 +54,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
                                     color: '#12B1FA'
                                 }}
                             >Doc:</Typography>
-                            <Typography>{row?.nombre}</Typography>
+                            <Typography>{row?.attributes?.nombre}</Typography>
                         </Grid>
                    
                         <Grid item sm={12} md={12} lg={12}>
@@ -65,7 +65,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
                                     color: '#12B1FA'
                                 }}
                             >Descripción:</Typography>
-                            <Typography>{row?.descripcion}</Typography>
+                            <Typography>{row?.attributes?.descripcion}</Typography>
                         </Grid>
 
                     </Grid>
@@ -77,7 +77,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
             width: '100px',
             sortable: true,
             name: 'Fecha',
-            selector: row => row?.fecha,
+            selector: row => row?.attributes?.fecha,
 
         },
         {
@@ -93,7 +93,7 @@ const TablaNormativa = ({ selectYear, selectedOption, search, setFilter, filter 
                                 // paddingLeft: 30, paddingRight: 20, margin: 0,
                                 border: '1px solid #12B1FA', borderRadius: 5
                             }}
-                            onClick={() => window.open(row?.archivo)}>
+                            onClick={() => window.open(row?.attributes?.archivo)}>
                             <PictureAsPdf />
                         </Button>
                     </Box>

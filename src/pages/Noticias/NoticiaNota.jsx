@@ -3,19 +3,32 @@ import { ArrowBackIos, ArrowBackIosRounded, ArrowLeft, ChevronLeft, ChevronRight
 import { Box, Button, Grid, IconButton, Typography } from '@mui/material'
 import { Link, useParams } from 'react-router-dom';
 import bdNoticias from '../../api/bdNoticias';
+import bdMuni from '../../api/bdMuni';
 
 const NoticiaNota = () => {
     const id = useParams();
-    const noticiaFiltrada = bdNoticias.find(noticia => noticia.id == id?.id);
+    const [noticia, setNoticia] = useState()
+
+    
+    useEffect(() => {
+        bdMuni.get(`/v1/noticias/${id.id}`)
+          .then(res => {
+            setNoticia(res?.data)
+          })
+          .catch(err => console.log(err))
+      }, [])
+    
+    console.log(noticia)
+    // const noticiaFiltrada = bdNoticias.find(noticia => noticia.id == id?.id);
 
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
     const handlePrevImage = () => {
-        setCurrentImage((prev) => (prev === 0 ? bdNoticias[0].fotos.length - 1 : prev - 1));
+        setCurrentImage((prev) => (prev === 0 ? noticia?.noticia_imagenes?.length - 1 : prev - 1));
     };
 
     const handleNextImage = () => {
-        setCurrentImage((prev) => (prev === bdNoticias[0].fotos.length - 1 ? 0 : prev + 1));
+        setCurrentImage((prev) => (prev === noticia?.noticia_imagenes.length - 1 ? 0 : prev + 1));
     };
 
     const openModal = () => {
@@ -70,7 +83,7 @@ const NoticiaNota = () => {
                         fontWeight: 'bold',
                         fontSize: 30
                     }}>
-                        {noticiaFiltrada.titulo}
+                        {noticia?.titulo}
                     </Typography>
 
                     {/* Imagenes */}
@@ -84,7 +97,7 @@ const NoticiaNota = () => {
                             <Box
                                 marginY={3}
                                 sx={{
-                                    backgroundImage: `url(${noticiaFiltrada.fotos[currentImage]?.foto})`,
+                                    backgroundImage: `url(${noticia?.noticia_imagenes[currentImage]?.imagen})`,
                                     position: 'relative',
 
                                 }}
@@ -103,7 +116,7 @@ const NoticiaNota = () => {
                                 ></div>
                                 <img
                                     onClick={openModal}
-                                    src={noticiaFiltrada.fotos[currentImage]?.foto}
+                                    src={noticia?.noticia_imagenes[currentImage]?.imagen}
 
                                     style={{
                                         position: 'relative',
@@ -130,7 +143,7 @@ const NoticiaNota = () => {
                         fontSize: 15,
                         whiteSpace: 'pre-line'
                     }}>
-                        {noticiaFiltrada.nota}
+                        {noticia?.nota}
                     </Typography>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6}>
@@ -139,7 +152,7 @@ const NoticiaNota = () => {
                         overflowX: 'auto'
                     }}>
                         {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02SpauSRTnKoFpC1Te3WrRbHA8BqoNjJAU9KyuaQBr6j34dpPumCWwTQgLc4dhmTXSl&show_text=true&width=500" width="500" height="800"></iframe> */}
-                        <div dangerouslySetInnerHTML={{ __html: noticiaFiltrada.referencia }} />
+                        <div dangerouslySetInnerHTML={{ __html: noticia?.referencia }} />
 
                     </Box>
                 </Grid>
