@@ -12,13 +12,10 @@ const Noticias = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [noticias, setNoticias] = useState()
 
-  console.log(currentPage)
   useEffect(() => {
-    console.log("cambio")
     bdMuni.get(`/v1/noticia?page=${currentPage}`)
       .then(res => {
         // setNoticias(res.data)
-        console.log(res.data.data)
         setNoticias(res.data.data);
         setTotalPages(res.data.last_page);
       })

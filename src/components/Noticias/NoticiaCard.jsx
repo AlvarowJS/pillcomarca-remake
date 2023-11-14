@@ -11,13 +11,11 @@ const NoticiaCard = ({ noticia }) => {
     }
 
     const formatearFecha = (fecha) => {
-        // Formatear la fecha a 'DD-MM-YYYY'
-        const fechaFormateada = new Date(fecha).toLocaleDateString('es-ES', {
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
-        });
-        return fechaFormateada;
+
+        const fechaCortada = fecha.slice(0, 10)
+        const [anio, mes, dia] = fechaCortada.split("-");        
+        const fechaInvertida = `${dia}/${mes}/${anio}`;
+        return fechaInvertida
     };
     return (
         <Grid item xs={12} sm={6} md={4}>

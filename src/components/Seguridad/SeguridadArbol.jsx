@@ -10,7 +10,6 @@ const SeguridadArbol = ({ seguridads, setSeleccion }) => {
 
     const pantalla = useMediaQuery((theme) => theme.breakpoints.down('lg'));
 
-    console.log(pantalla)
     const handleAccordionChange = (categoria) => {
         setExpandedSeguridad((prevExpandedSeguridad) => ({
             ...prevExpandedSeguridad,

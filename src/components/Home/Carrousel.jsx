@@ -11,10 +11,11 @@ const Carrousel = () => {
 
     // const images = ['/propaganda5.png', '/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
     const [images, setImages] = useState([])
+
     useEffect(() => {
         bdMuni.get('/v1/portada')
             .then(res => {
-                const fotos = res?.data?.map(item => `http://127.0.0.1:8000/storage/fotosPortada/${item.foto}`) || [];
+                const fotos = res?.data?.map(item => `https://sv-yptplguxwm.cloud.elastika.pe/storage/fotosPortada/${item.foto}`) || [];
                 setImages(fotos);
             })
             .catch(err => console.log(err))

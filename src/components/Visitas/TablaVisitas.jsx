@@ -15,7 +15,6 @@ const TablaVisitas = () => {
             download: true,
             header: true, // Indica si la primera fila contiene encabezados
             complete: (result) => {
-                console.log(result)
                 const renamedData = result.data.map((row) => ({
                     nombres: row['Nombre y apellidos'],
                     fecha: row["Fecha "],
@@ -29,7 +28,6 @@ const TablaVisitas = () => {
                 const reversedData = [...renamedData].reverse();
 
                 setJsonData(reversedData);
-                console.log(renamedData)
                 // setJsonData(result.data);
             },
             error: (error) => {

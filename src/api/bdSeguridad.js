@@ -130,4 +130,3 @@ export const bdSeguridad = [
 
 ]
 export default bdSeguridad;
-console.log(bdSeguridad)
