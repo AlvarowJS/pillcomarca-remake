@@ -30,6 +30,7 @@ const NoticiaPaginacion = ({
                 <NavigateBeforeIcon />
             </IconButton> */}
             <Pagination
+                siblingCount={0}
                 count={totalPages}
                 defaultPage={currentPage}
                 onChange={handlePageChange}
