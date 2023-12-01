@@ -60,7 +60,7 @@ const TablaVisitas = ({
             minWidth: '300px',
             sortable: false,
             name: 'Oficina',
-            selector: row => row?.depedencia?.nombre_depedencia,
+            selector: row => row?.depedencia?.nombre_dependencia,
         },
         {
             minWidth: '100px',
