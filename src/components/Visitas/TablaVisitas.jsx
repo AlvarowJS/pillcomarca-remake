@@ -3,39 +3,24 @@ import DataTable from 'react-data-table-component'
 import bdVisitas from '../../api/bdVisitas'
 import { Box, Button, Typography } from '@mui/material'
 import Papa from 'papaparse';
+import bdMuni from '../../api/bdMuni';
 
-const TablaVisitas = () => {
-    const [jsonData, setJsonData] = useState([]);
+const TablaVisitas = ({
+    // visitas, currentPage, setCurrentPage, totalPages, totalRows
+}) => {
 
-    useEffect(() => {
-        // Ruta al archivo CSV en la carpeta 'public'
-        const csvFilePath = '/excelvisitas.csv';
+    // const handlePageChange = page => {
+    //     setCurrentPage(page);
+    // };
 
-        Papa.parse(csvFilePath, {
-            download: true,
-            header: true, // Indica si la primera fila contiene encabezados
-            complete: (result) => {
-                const renamedData = result.data.map((row) => ({
-                    nombres: row['Nombre y apellidos'],
-                    fecha: row["Fecha "],
-                    dni: row["dni "],
-                    tipo: row["persona natural o juridica"],
-                    asunto: row["Asunto"],
-                    oficina: row["Oficina"],
-                    ingreso: row["Hora de ingreso"],
-                    salida: row["Hora de salida"],
-                }));
-                const reversedData = [...renamedData].reverse();
-
-                setJsonData(reversedData);
-                // setJsonData(result.data);
-            },
-            error: (error) => {
-                console.error('Error al leer el archivo CSV:', error.message);
-            },
-        });
-    }, []);
-
+    // const paginationComponentOptions = {
+    //     rowsPerPageText: 'Filas por página',
+    //     rangeSeparatorText: 'de',
+    //     selectAllRowsItem: true,
+    //     selectAllRowsItemText: 'Todos',
+    //     totalPages: totalPages,
+    //     onPageChange: page => handlePageChange(page)
+    // };
 
     const columns = [
         {
@@ -43,68 +28,101 @@ const TablaVisitas = () => {
             sortable: true,
             name: 'Fechas',
             selector: 'fecha',
-            sortFunction: (a, b) => {
-                // Ordena las fechas de más reciente a más antiguo
-                const dateA = new Date(a);
-                const dateB = new Date(b);
-                return dateB - dateA;
-            },
         },
         {
             minWidth: '450px',
             sortable: false,
             name: 'Nombre y Apellidos',
-            selector: row => row.nombres,
+            selector: row => row?.usuario_publico?.nombre + " " + row?.usuario_publico?.nombre,
 
         },
         {
             minWidth: '170px',
             sortable: false,
             name: 'DNI',
-            selector: row => row.dni,
+            selector: row => row?.usuario_publico?.dni,
 
         },
         {
             minWidth: '150px',
             sortable: false,
             name: 'Persona Natural/Juridica',
-            selector: row => row.tipo,
+            selector: row => row?.usuario_publico?.persona,
 
         },
         {
             minWidth: '300px',
             sortable: false,
             name: 'Asunto',
-            selector: row => row.asunto,
+            selector: row => row?.asunto,
         },
         {
             minWidth: '300px',
             sortable: false,
             name: 'Oficina',
-            selector: row => row.oficina,
+            selector: row => row?.depedencia?.nombre_depedencia,
         },
         {
             minWidth: '100px',
             sortable: false,
             name: 'Hora de Ingreso',
-            selector: row => row.ingreso,
+            selector: row => row?.hora_ingreso,
         },
         {
             minWidth: '100px',
             sortable: false,
             name: 'Hora de Salida',
-            selector: row => row.salida,
+            selector: row => row?.hora_salida,
         },
     ]
+
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [totalRows, setTotalRows] = useState(0);
+    const [perPage, setPerPage] = useState(10);
+
+    const fetchUsers = async page => {
+        setLoading(true);
+
+        const response = await bdMuni.get(`/v1/registro-visitas?page=${page}&per_page=${perPage}&delay=1`);
+
+        setData(response.data.data);
+        setTotalRows(response.data.total);
+        setLoading(false);
+    };
+
+    const handlePageChange = page => {
+        fetchUsers(page);
+    };
+
+    const handlePerRowsChange = async (newPerPage, page) => {
+        setLoading(true);
+
+        const response = await bdMuni.get(`/v1/registro-visitas?page=${page}&per_page=${newPerPage}&delay=1`);
+
+        setData(response.data.data);
+        setPerPage(newPerPage);
+        setLoading(false);
+    };
+
+    useEffect(() => {
+        fetchUsers(1); // fetch page 1 of users
+
+    }, []);
+
     return (
         <Box sx={{ marginTop: 2, overflowX: 'auto' }}>
 
             <DataTable
-                noHeader
-                pagination
-                className='react-dataTable'
+                title="Users"
                 columns={columns}
-                data={jsonData}
+                data={data}
+                progressPending={loading}
+                pagination
+                paginationServer
+                paginationTotalRows={totalRows}
+                onChangeRowsPerPage={handlePerRowsChange}
+                onChangePage={handlePageChange}
             />
         </Box>
     )
