@@ -18,7 +18,6 @@ const NoticiaNota = () => {
           .catch(err => console.log(err))
       }, [])
     
-    console.log(noticia)
     // const noticiaFiltrada = bdNoticias.find(noticia => noticia.id == id?.id);
 
     const [currentImage, setCurrentImage] = useState(0);

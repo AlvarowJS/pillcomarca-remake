@@ -18,6 +18,7 @@ import MesaPartes from '../pages/MesaPartes/MesaPartes'
 import Noticias from '../pages/Noticias/Noticias'
 import NoticiaNota from '../pages/Noticias/NoticiaNota'
 import Visitas from '../pages/Visitas/Visitas'
+import { AgendaAlcalde } from '../pages/Actividad/AgendaAlcalde'
 
 const AppRouter = () => {
 
@@ -53,6 +54,8 @@ const AppRouter = () => {
             {/* <Route path='/ubicanos' element={<Ubicanos />} /> */}
             <Route path='/organigrama' element={<Organigrama />} />
             <Route path='/registro-visitas' element={<Visitas />} />
+
+            <Route path='/agenda-alcaldia' element={<AgendaAlcalde />} />
 
             
           </Routes>

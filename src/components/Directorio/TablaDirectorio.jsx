@@ -3,8 +3,6 @@ import DataTable from 'react-data-table-component'
 import { Box, Button, Typography } from '@mui/material'
 import {bdDirectorio} from '../../api/bdDirectorio.js'
 
-//console.log(bdDirectorio)
-
 
 const TablaDirectorio = () => {
     /*

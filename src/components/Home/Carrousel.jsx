@@ -1,27 +1,40 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { Box, Button, Card, CardMedia, FormControl, FormGroup, FormHelperText, Grid, IconButton, Input, InputAdornment, InputLabel, OutlinedInput, TextField, Modal, Typography } from '@mui/material'
 import { ArrowBack, ArrowForward, ChevronLeft, ChevronRight } from '@mui/icons-material';
+import bdMuni from '../../api/bdMuni';
 const Carrousel = () => {
     const navigate = useNavigate()
 
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
 
-    const images = ['/propaganda5.png','/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
+    // const images = ['/propaganda5.png', '/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
+    const [images, setImages] = useState([])
+
+    useEffect(() => {
+        bdMuni.get('/v1/portada')
+            .then(res => {
+                const fotos = res?.data?.map(item => `https://sv-yptplguxwm.cloud.elastika.pe/storage/fotosPortada/${item.foto}`) || [];
+                setImages(fotos);
+            })
+            .catch(err => console.log(err))
+    }, [])
+    console.log(images);
+
     const handlePrevImage = () => {
-        setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+        setCurrentImage((prev) => (prev === 0 ? images?.length - 1 : prev - 1));
     };
 
     const handleNextImage = () => {
-        setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+        setCurrentImage((prev) => (prev === images?.length - 1 ? 0 : prev + 1));
     };
 
-   const openModal = () => {
-        
-       
+    const openModal = () => {
+
+
         setModalOpen(true);
-        
+
 
     };
 
