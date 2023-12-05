@@ -7,6 +7,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
+
+
+
 const Footer = () => {
     const insta = () => {
         window.open("https://www.instagram.com/peru.exploring/", "_blank")
@@ -87,6 +90,18 @@ const Footer = () => {
                                     Mesa de partes virtual
                                 </NavLink>
                             </Typography>
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>Enlaces Importantes</Typography>
+                            {/* ... (otros enlaces) */}
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/convocatoria'>
+                                    Mesa de partes virtual
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <a href='https://www.facebook.com/MunicipalidadDistritaldePillcoMarca' target='_blank' rel='noopener noreferrer'>
+                                    <FacebookIcon /> {/* Agrega el icono de Facebook */}
+                                </a>
+                            </Typography>                            
 
                         </Box>
                     </Grid>

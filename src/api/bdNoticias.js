@@ -17,6 +17,126 @@ const bdNoticias = [
     },
     */
    {
+        id: 38,
+        titulo: '🔰𝐋os medios de comunicación informan 👇',
+        fecha: '19/10/2023',
+        nota: 'los diferentes medios de comunicación informan sobre la municipalidad',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D179231738565582%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="562" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5315215/standard_854947-391604799_179231735232249_5516495083254336756_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 37,
+        titulo: '🔰𝐋iberaciòn de pistas y veredas‼️',
+        fecha: '18/10/2023',
+        nota: 'La municipalidad distrital de Pillco Marca realizó un operativo inopinado',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D178500518638704%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="819" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5315030/standard_854929-392878720_178501068638649_5667718771435600630_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 36,
+        titulo: '🔰‼️𝗜nvitación‼️🔰',
+        fecha: '17/10/2023',
+        nota: 'Taller virtual: Barrio Seguro',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid0urE17HhMyhyGd9ZNGU3xcSpMZ9F36xHgv7JasgryEZWmcUUAk3ppRQhNWojiUaNil&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5298482/standard_852444-391712377_177730645382358_7717876920281299208_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 35,
+        titulo: '‼️🔰Día nacional de las personas con discapacidad 🔰‼️',
+        fecha: '17/10/2023',
+        nota: 'la Municipal Distrital de Pillco Marca a través del Programa de OMAPED',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D177862908702465%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5314674/standard_854912-393485530_177866562035433_5859657710650270749_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 34,
+        titulo: '🚨𝐎perativo inopido‼️',
+        fecha: '17/10/2023',
+        nota: 'La municipalidad distrital de Pillco Marca realizó un operativo INOPINADO',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D177738048714951%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5314458/standard_854874-391597345_177738855381537_3022474706969038249_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 33,
+        titulo: 'Señor de Burgos en Pillco Marca',
+        fecha: '16/10/2023',
+        nota: 'Acompañemos a la venerada imagen de nuestro Señor de Burgos en su Tercer recorrido',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipalidadDistritaldePillcoMarca%2Fposts%2Fpfbid02cEfxtK1LaNkiZnbMTvgdugN8bXhpgaLuYtkyHJTBRXQwYZD1gtBux2ZaaHkdjcr4l&show_text=true&width=500" width="500" height="469" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5298414/standard_852435-392946259_177670682055021_5085049721824325156_n.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 32,
+        titulo: '🔰𝗜𝗭𝗔𝗠𝗜𝗘𝗡𝗧𝗢 𝗗𝗢𝗠𝗜𝗡𝗜𝗖𝗔l🔰',
+        fecha: '15/10/2023',
+        nota: 'todos los domingos se lleva el izamiento en la Municipalidad Distrital de Pillco Marca',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D176963552125734%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5298334/standard_852422-392930647_176966648792091_3244045148903932244_n-1.jpg'
+            },
+           
+        ]
+    },
+    {
+        id: 31,
+        titulo: '✅Con gran éxito se realizó la campaña de recojo de RAEE ♻️',
+        fecha: '13/10/2023',
+        nota: 'la Gerencia de Medio Ambiente, realizó la campaña de recojo de los residuos de aparatos eléctricos y electrónico',
+        referencia: '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D176473272174762%26set%3Da.117374308084659%26type%3D3&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
+        fotos: [
+            {
+                id: 1,
+                nombre: 'foto1',
+                foto: 'https://cdn.www.gob.pe/uploads/document/file/5298226/standard_852412-391739128_176475608841195_8813124757086073488_n.jpg'
+            },
+           
+        ]
+    },
+   {
         id: 30,
         titulo: '🔰𝐓aller Descentralizado fase 2- diagnostico turístico local‼️',
         fecha: '12/10/2023',
@@ -242,7 +362,7 @@ const bdNoticias = [
            
         ]
     }, 
-/*    
+   
     {
         id: 15,
         titulo: '𝐈𝐍𝐕𝐈𝐓𝐀𝐂𝐈𝐎́𝐍',
@@ -526,7 +646,7 @@ const bdNoticias = [
             }
         ]
     }
-*/
+
 
 ]
 

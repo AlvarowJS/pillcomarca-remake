@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import { Box, Button, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Collapse } from "@mui/material"
 import { KeyboardArrowDown, KeyboardArrowRight, Mail } from '@mui/icons-material';
 import PersonIcon from '@mui/icons-material/Person';
+import FacebookIcon from '@mui/icons-material/Facebook';
+const handleFacebookClick = () => {
+    // Lógica adicional que puedes agregar si es necesario
+    handleBackdropClick();
+  };
 const SideMenu = ({ menu, setMenu, idioma }) => {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
     const [subMenuOpen2, setSubMenuOpen2] = useState(false);
@@ -49,17 +54,24 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                     </NavLink>
                     <br />
                     <NavLink>
-                        <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                        <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0.9, paddingRight: 0 }}>
                             <PersonIcon />
                             SysDoc
                         </Button>
                     </NavLink>
+                    <NavLink to='/facebook' onClick={handleBackdropClick} sx= {{paddingLeft: 0, paddingRight: 0 }}>
+                        <ListItem button>
+                            <FacebookIcon sx={{ color: 'blue',paddingLeft: 0, paddingRight: 0 }} /> {/* Agrega el icono de Facebook en azul */}
+                            <ListItemText primary={'Facebook'} />
+                        </ListItem>
+                    </NavLink>
                     <NavLink>
-                        <Button onClick={correoInstitucional} sx={{ color: '#FE6C2C', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                        <Button onClick={correoInstitucional} sx={{ color: '#FE6C2C', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0.9, paddingRight: 0,paddingTop: 0 }}>
                             <Mail />
                             Correo Institucional
                         </Button>
                     </NavLink>
+                    
                     <NavLink to='/' onClick={handleBackdropClick}>
                         <ListItem button>
                             <ListItemText primary={'Inicio'} />
@@ -163,8 +175,9 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                             <ListItemText primary={'Convocatoria'} />
                         </ListItem>
                     </NavLink>
+                    
                 </List>
-
+                
             </Box>
         </Drawer>
 

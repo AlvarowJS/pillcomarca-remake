@@ -6,6 +6,10 @@ import { Link, Menu, MenuItem, AppBar, Box, Button, Switch, Toolbar, Typography 
 import PersonIcon from '@mui/icons-material/Person';
 import MenuIcon from '@mui/icons-material/Menu';
 import { KeyboardArrowDown } from '@mui/icons-material';
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+
+
 const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
 
     const navbar = useRef()
@@ -197,29 +201,42 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                                 </Button>
                             </Link>
                         </NavLink>
-                    </Box>
-                    <Box flex={1} />
-                    <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' } }}>
+                        
 
+                    </Box > 
+                    
+                
+                    <Box display="flex" alignItems="center" sx={{ marginLeft: '5%' }}>
+                        <Link to='https://www.facebook.com/MunicipalidadDistritaldePillcoMarca' target='_blank' rel='noopener noreferrer'>
+                        <Button sx={{ width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, marginBottom: 0, cursor: 'pointer', color: 'blue', marginRight: -7, padding: '8px 12px' }}>
+                            <FacebookIcon /> {/* Agrega el icono de Facebook en azul */}
+                        </Button>
+                        </Link>
+                    </Box>
+
+                    <Box display="flex" alignItems="center" flex={1}>
+                        {/* Contenido de la segunda Box */}
                         <Link>
-                            <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
-                                <PersonIcon />
-                                SysDoc
-                            </Button>
+                        <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', marginBottom: 0, width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                            <PersonIcon />
+                            SysDoc
+                        </Button>
                         </Link>
                     </Box>
 
                     <Box sx={{ marginX: 3, display: { xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' } }}>
+                        {/* Contenido de la tercera Box */}
                         <img
-                            src="/portal.png"
-                            alt="portal de transparencia"
-                            width={100}
-                            height={50}
-                            style={{ marginTop: 20, cursor: 'pointer' }}
-                            onClick={portalTransparencia}
+                        src="/portal.png"
+                        alt="portal de transparencia"
+                        width={100}
+                        height={50}
+                        style={{ marginTop: 20, cursor: 'pointer' }}
+                        onClick={portalTransparencia}
                         />
                     </Box>
                     <Box sx={{ display: { xl: 'none', lg: 'none', md: 'block' } }}>
+                        {/* Contenido del ícono de menú */}
                         <MenuIcon onClick={handleMenuToggle} sx={{ color: 'black', marginLeft: 3, fontSize: 30, cursor: 'pointer' }} />
                     </Box>
 

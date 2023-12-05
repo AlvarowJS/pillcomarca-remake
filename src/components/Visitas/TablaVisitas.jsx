@@ -114,7 +114,7 @@ const TablaVisitas = ({
         <Box sx={{ marginTop: 2, overflowX: 'auto' }}>
 
             <DataTable
-                title="Users"
+                title=""
                 columns={columns}
                 data={data}
                 progressPending={loading}
