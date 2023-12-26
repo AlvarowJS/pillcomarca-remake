@@ -33,7 +33,7 @@ const TablaVisitas = ({
             minWidth: '450px',
             sortable: false,
             name: 'Nombre y Apellidos',
-            selector: row => row?.usuario_publico?.nombre + " " + row?.usuario_publico?.nombre,
+            selector: row => row?.usuario_publico?.nombre + " " + row?.usuario_publico?.apellidos,
 
         },
         {
@@ -114,7 +114,7 @@ const TablaVisitas = ({
         <Box sx={{ marginTop: 2, overflowX: 'auto' }}>
 
             <DataTable
-                title="Users"
+ 
                 columns={columns}
                 data={data}
                 progressPending={loading}
