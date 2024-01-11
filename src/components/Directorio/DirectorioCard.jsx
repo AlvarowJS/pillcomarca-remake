@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, Card, CardMedia, Grid, Typography } from '@mui/material'
 import { Link, useNavigate } from 'react-router-dom'
-const fotoDirect = "http://127.0.0.1:8000/storage/directorio/"
+const fotoDirect = "https://sv-yptplguxwm.cloud.elastika.pe/storage/directorio/"
 
 const DirectorioCard = ({
     directorio
