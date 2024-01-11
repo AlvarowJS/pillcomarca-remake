@@ -6,20 +6,21 @@ const fotoDirect = "https://sv-yptplguxwm.cloud.elastika.pe/storage/directorio/"
 const DirectorioCard = ({
     directorio
 }) => {
-    console.log(directorio, "?")
+
     return (
         <Grid item xs={12} sm={6} md={4}
 
         >
             <div style={{
-                backgroundColor: 'rgba(17, 172, 230, 0.8)',
+                // backgroundColor: '#BFB252',
                 backgroundImage: `url(${fotoDirect + directorio?.foto})`,
+                position: 'relative',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: 'center center',
                 width: '100%',
                 height: 300,
                 borderRadius: '20px',
-                overflow: 'hidden', // Para asegurarse de que la imagen no sobresalga del contenedor si tiene un borderRadius
+                overflow: 'hidden',
             }}>
 
                 <img
