@@ -1,4 +1,4 @@
-import { DesktopMac, FileCopy, LocalPolice, Mail, MenuBook, Search } from '@mui/icons-material'
+import { AccountCircle, DesktopMac, FileCopy, LocalPolice, Mail, MenuBook, Search } from '@mui/icons-material'
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
@@ -23,6 +23,10 @@ const Servicios = () => {
 
   const libroReclamaciones = () => {
     window.open('https://reclamos.servicios.gob.pe/?institution_id=3654', '_blank');
+  }
+
+  const intranet = () => {
+    window.open('https://intranet.munipillcomarca.gob.pe/', '_blank');
   }
 
   return (
@@ -142,7 +146,25 @@ const Servicios = () => {
             Libro de Reclamaciones
           </Typography>
         </Grid>
-
+        <Grid item xs={12} sm={12} md={4} lg={3}
+          sx={{
+            backgroundColor: '#12B1FA',
+            color: 'white',
+            width: '200px',
+            height: '200px',
+            textAlign: 'center',
+            cursor: 'pointer',
+            border: '1px solid',
+            paddingTop: 1,
+            borderRadius: 2
+          }}
+          onClick={intranet}
+        >
+         <AccountCircle sx={{ fontSize: 100, color: 'white' }} />
+          <Typography fontSize={25}>
+            INTRANET
+          </Typography>
+        </Grid>
 
       </Grid>
     </>
