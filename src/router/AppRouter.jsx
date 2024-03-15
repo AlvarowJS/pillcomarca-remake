@@ -19,6 +19,7 @@ import Noticias from '../pages/Noticias/Noticias'
 import NoticiaNota from '../pages/Noticias/NoticiaNota'
 import Visitas from '../pages/Visitas/Visitas'
 import { AgendaAlcalde } from '../pages/Actividad/AgendaAlcalde'
+import PresuPart from '../pages/PresuPart/PresuPart'
 
 const AppRouter = () => {
 
@@ -56,6 +57,8 @@ const AppRouter = () => {
             <Route path='/registro-visitas' element={<Visitas />} />
 
             <Route path='/agenda-alcaldia' element={<AgendaAlcalde />} />
+
+            <Route path='/presupuesto-participativo' element={<PresuPart />} />
 
             
           </Routes>

@@ -1,4 +1,4 @@
-import { AccountCircle, DesktopMac, FileCopy, LocalPolice, Mail, MenuBook, Search } from '@mui/icons-material'
+import { AccountCircle, DesktopMac, FileCopy, LocalPolice, Mail, MenuBook, People, Search } from '@mui/icons-material'
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
@@ -14,6 +14,10 @@ const Servicios = () => {
   const seguridadCiudadana = () => {
     navigate('/seguridad-ciudadana')
   }
+  const presupuestoParticipativo = () => {
+    navigate('/presupuesto-participativo')
+  }
+
   const mesaPartes = () => {
     navigate('/mesa-partes')
   }
@@ -160,12 +164,30 @@ const Servicios = () => {
           }}
           onClick={intranet}
         >
-         <AccountCircle sx={{ fontSize: 100, color: 'white' }} />
+          <AccountCircle sx={{ fontSize: 100, color: 'white' }} />
           <Typography fontSize={25}>
             INTRANET
           </Typography>
         </Grid>
-
+        <Grid item xs={12} sm={12} md={4} lg={3}
+          sx={{
+            backgroundColor: '#106CB2',
+            color: 'white',
+            width: '200px',
+            height: '200px',
+            textAlign: 'center',
+            cursor: 'pointer',
+            border: '1px solid',
+            paddingTop: 1,
+            borderRadius: 2
+          }}
+          onClick={presupuestoParticipativo}
+        >
+          <People sx={{ fontSize: 100, color: 'white' }} />
+          <Typography fontSize={25}>
+            PRESUPUESTO PARTICIPATIVO
+          </Typography>
+        </Grid>
       </Grid>
     </>
   )
