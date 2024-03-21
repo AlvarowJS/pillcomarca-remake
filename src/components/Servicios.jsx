@@ -22,7 +22,7 @@ const Servicios = () => {
     navigate('/mesa-partes')
   }
   const correoInstitucional = () => {
-    window.open('https://cinco.serverpe.com:2096', '_blank');
+    window.open('https://gtxm1103.siteground.biz/webmail/log-in/', '_blank');
   }
 
   const libroReclamaciones = () => {
