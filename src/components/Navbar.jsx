@@ -158,6 +158,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             <NavLink to='/acceso-informacion' style={{ color: 'black' }}>
                                 <MenuItem onClick={handleCloseMenu}>Acceso a la información</MenuItem>
                             </NavLink>
+                            <NavLink to='/agenda' style={{ color: 'black' }}>
+                                <MenuItem onClick={handleCloseMenu}>Agenda Institucional</MenuItem>
+                            </NavLink>
                         </Menu>
                         <Menu
                             anchorEl={documentsAnchorEl}

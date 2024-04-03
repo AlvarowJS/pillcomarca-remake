@@ -48,7 +48,7 @@ const PresuPart = () => {
               <>
                 <Typography>
                   {presupuesto?.nombre}
-                  <Download style={{ marginLeft: 10, color: '#12B1FA' }}
+                  <Download style={{ marginLeft: 10, color: '#12B1FA', cursor: 'pointer' }}
                     onClick={() => window.open(presupuesto?.archivo)}
                   />
 
@@ -61,6 +61,23 @@ const PresuPart = () => {
               </>
             ))
           }
+          <br />
+          <br />
+          <h1 style={{ color: '#12B1FA' }}> Informe Final:</h1>
+
+          <Typography>
+            Informe Final - Presupuesto Participativo 2025
+            <Download style={{ marginLeft: 10, color: '#12B1FA', cursor: 'pointer' }}
+              onClick={() => window.open('https://cdn.www.gob.pe/uploads/document/file/6137099/5421000-informe-final-de-proceso-del-presupuesto-participativo-basado-en-resultados-2025.pdf?v=1712157747')}
+            />
+
+          </Typography>
+          <br />
+          <Typography>
+            {/* {presupuesto?.archivo} */}
+          </Typography>
+          <hr />
+
         </Box>
       </Grid>
       {/* <SeguridadTabla /> */}

@@ -18,9 +18,9 @@ import MesaPartes from '../pages/MesaPartes/MesaPartes'
 import Noticias from '../pages/Noticias/Noticias'
 import NoticiaNota from '../pages/Noticias/NoticiaNota'
 import Visitas from '../pages/Visitas/Visitas'
-import { AgendaAlcalde } from '../pages/Actividad/AgendaAlcalde'
 import PresuPart from '../pages/PresuPart/PresuPart'
 import AccesoInfoPage from '../pages/AccesoInfoPage/AccesoInfoPage'
+import Agenda from '../pages/Actividad/Agenda'
 
 const AppRouter = () => {
 
@@ -57,7 +57,7 @@ const AppRouter = () => {
             <Route path='/organigrama' element={<Organigrama />} />
             <Route path='/registro-visitas' element={<Visitas />} />
 
-            <Route path='/agenda-alcaldia' element={<AgendaAlcalde />} />
+            <Route path='/agenda' element={<Agenda />} />
 
             <Route path='/presupuesto-participativo' element={<PresuPart />} />
 

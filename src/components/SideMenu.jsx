@@ -132,6 +132,11 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
                                     <ListItemText primary={'Acceso a la información'} />
                                 </ListItem>
                             </NavLink>
+                            <NavLink to='/agenda' onClick={handleBackdropClick}>
+                                <ListItem button sx={{ pl: 4 }}>
+                                    <ListItemText primary={'Agenda Institucional'} />
+                                </ListItem>
+                            </NavLink>
                         </List>
                     </Collapse>
                     <ListItem button onClick={handleSubMenuToggle2}>
