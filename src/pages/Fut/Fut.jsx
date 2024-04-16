@@ -42,7 +42,7 @@ const Fut = () => {
       </Box>
       <Box
         sx={{
-          paddingX: 10
+          paddingX: {xs: 3, sm: 10 }
         }}
       >
         <iframe

@@ -6,8 +6,6 @@ import bdPresupuesto from '../../api/bdPresupuesto'
 
 const PresuPart = () => {
 
-  console.log(bdPresupuesto)
-
   return (
     <>
       <Box position="relative" width="100%">

@@ -6,7 +6,7 @@ const Mision = () => {
         <>
             <Box
                 sx={{
-                    paddingX: { xs: 10, sm: 10, md: 20, lg: 40 },
+                    paddingX: { xs: 2, sm: 10, md: 20, lg: 40 },
                     marginTop: 5
                 }}
 

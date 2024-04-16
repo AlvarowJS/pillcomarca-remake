@@ -6,11 +6,12 @@ const Historia = () => {
     <>
       <Box sx={{
         marginTop: 12,
-        paddingX: 10
+        // paddingX: 10,
+        paddingX: { xs: 5, md: 10 }
       }}>
         <Box sx={{
           backgroundColor: '#12B1FA',
-          width: '50%',
+          width: {xs: '70%', sm: '50%'},
           borderTopRightRadius: 10,
           borderBottomRightRadius: 10,
           marginBottom: 3

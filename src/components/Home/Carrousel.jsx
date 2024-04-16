@@ -20,7 +20,6 @@ const Carrousel = () => {
             })
             .catch(err => console.log(err))
     }, [])
-    console.log(images);
 
     const handlePrevImage = () => {
         setCurrentImage((prev) => (prev === 0 ? images?.length - 1 : prev - 1));

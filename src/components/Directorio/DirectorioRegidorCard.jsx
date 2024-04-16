@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom'
 const fotoDirect = "https://sv-yptplguxwm.cloud.elastika.pe/storage/directorio/"
 
 const DirectorioRegidorCard = ({regidor}) => {
-    console.log(regidor)
   return (
     <Grid item xs={12} sm={6} md={4}
 

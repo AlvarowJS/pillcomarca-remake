@@ -15,7 +15,7 @@ const Organigrama = () => {
     <>
       <Box sx={{
         backgroundColor: '#12B1FA',
-        width: '50%',
+        width: {xs: '80%', sm: '50%'},
         borderTopRightRadius: 10,
         borderBottomRightRadius: 10,
         // marginBottom: 3,
@@ -39,7 +39,7 @@ const Organigrama = () => {
       </Box>
       <Box
         sx={{
-          paddingX: 10
+          paddingX: {xs: 2, sm: 10}
         }}
       >
         <iframe

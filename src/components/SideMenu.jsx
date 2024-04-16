@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Box, Button, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Collapse } from "@mui/material"
 import { KeyboardArrowDown, KeyboardArrowRight, Mail } from '@mui/icons-material';
@@ -25,6 +25,8 @@ const SideMenu = ({ menu, setMenu, idioma }) => {
     const handleSubMenuToggle2 = () => {
         setSubMenuOpen2(!subMenuOpen2);
     };
+    
+    
     return (
         <Drawer
             open={menu}

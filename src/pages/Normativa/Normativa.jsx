@@ -35,7 +35,8 @@ const Normativa = () => {
         2024, 2023, 2022, 2021, 2020, 2019, 2018
     ];
     // Cambiar de pagina
-    const handlePageChange = (value) => {
+    const handlePageChange = (event, value) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         setCurrentPage(value);
     };
 
@@ -47,19 +48,29 @@ const Normativa = () => {
                 setTotalPages(res.data.links.pagination.last_page);
             })
             .catch(err => console.log(err))
-    }, [currentPage])
-
+    }, [])
     // Filtro por select documentos normativos:
     const buscarNormativa = () => {
-        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}`)
+        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}`
+        )
             .then(res => {
                 setNormativas(res.data.data)
                 setTotalPages(res.data.links.pagination.last_page)
-                setCurrentPage(1);
+                setCurrentPage(1)
             })
             .catch(err => console.log(err))
     }
 
+    useEffect(() => {
+        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}&page=${currentPage ?? ''}`
+        )
+            .then(res => {
+                setNormativas(res.data.data)
+                setTotalPages(res.data.links.pagination.last_page)
+                
+            })
+            .catch(err => console.log(err))
+    }, [currentPage])
 
 
     return (
@@ -83,7 +94,6 @@ const Normativa = () => {
                         <Grid item xs={12} sm={12} md={4}>
                             <InputLabel htmlFor="tipo_doc">Tipo de documento</InputLabel>
                             <Select
-
                                 onChange={handleTipos}
                                 label="Tipo de documento"
                                 fullWidth
@@ -171,7 +181,8 @@ const Normativa = () => {
                     <NormativaPaginacion
                         totalPages={totalPages}
                         currentPage={currentPage}
-                        onChange={handlePageChange}
+                        handlePageChange={handlePageChange}
+                        setCurrentPage={setCurrentPage}                        
                     />
                 </Container>
 
