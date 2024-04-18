@@ -21,6 +21,8 @@ import Visitas from '../pages/Visitas/Visitas'
 import PresuPart from '../pages/PresuPart/PresuPart'
 import AccesoInfoPage from '../pages/AccesoInfoPage/AccesoInfoPage'
 import Agenda from '../pages/Actividad/Agenda'
+import ProyectoInversion from '../pages/PaginasInteres/ProyectoInversion'
+import ProgramPresupuestal from '../pages/PaginasInteres/ProgramPresupuestal'
 
 const AppRouter = () => {
 
@@ -63,6 +65,9 @@ const AppRouter = () => {
 
             <Route path='/acceso-informacion' element={<AccesoInfoPage />} />
 
+            {/* Rutas de interes */}
+            <Route path='/paginas-interes/proyectos-inversion' element={<ProyectoInversion />} />
+            <Route path='/paginas-interes/programacion-presupuestal' element={<ProgramPresupuestal />} />
           </Routes>
           <Footer />
 

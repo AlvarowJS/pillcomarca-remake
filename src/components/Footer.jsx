@@ -16,6 +16,8 @@ const Footer = () => {
         window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
 
     }
+
+    const isMobile = window.innerWidth < 600;
     return (
         <footer>
             <Box sx={{
@@ -25,20 +27,21 @@ const Footer = () => {
             }}>
 
                 <Grid container spacing={1}>
-                    <Grid item sm={3}>
+                    <Grid item xs={6} sm={3} >
                         <Box>
+
                             <img
                                 src="/logo2.png"
                                 alt="logo municipalidad de pillco"
-                                width={320}
-                                height={320}
+                                width='100%'
+                                height='50%'
                                 style={{ marginTop: 20 }}
                             />
                         </Box>
                     </Grid>
-                    <Grid item sm={3}>
-                        <Box>
-                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>Enlaces Importantes</Typography>
+                    <Grid item xs={6} sm={3}>
+                        <Box sx={{ fontStyle: 'italic' }}>
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>ENLACES IMPORTANTES</Typography>
                             <Typography color={'#ffff'} >
                                 <NavLink to='/historia'>
                                     Historia
@@ -90,6 +93,34 @@ const Footer = () => {
 
                         </Box>
                     </Grid>
+                    <Grid item xs={6} sm={3} sx={{ borderLeft: 'white 1px solid '}}>
+                        <Box sx={{ fontStyle: 'italic' }}>
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>ENLACES DE INTERES</Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/paginas-interes/proyectos-inversion'>
+                                    Proyectos de Inversión 2024
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/paginas-interes/programacion-presupuestal'>
+                                    Programación Presupuestal 2024
+                                </NavLink>
+                            </Typography>                                                        
+                        </Box>
+                    </Grid>
+                    <Grid item xs={6} sm={3} sx={{ borderLeft: 'white 1px solid ', fontStyle: 'italic'}} >
+                        <Box >
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>HORARIO DE ATENCIÓN</Typography>
+                            <Typography color={'#ffff'} >
+                               8:00 am hasta la 1:00 pm y
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                1:45 am hasta la 4:45 pm
+                            </Typography>                                                        
+                        </Box>
+                    </Grid>
+                </Grid>
+                <Grid>
                     <Grid item xs={12} sm={6}>
                         <Box sx={{ paddingX: 5 }}>
                             <h2 style={{ fontWeight: 'bold', color: '#ffff' }}>Ubicación</h2>
@@ -108,7 +139,6 @@ const Footer = () => {
                         </Box>
                     </Grid>
                 </Grid>
-
             </Box>
         </footer>
     )
