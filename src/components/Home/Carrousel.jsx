@@ -8,7 +8,9 @@ const Carrousel = () => {
 
     const [currentImage, setCurrentImage] = useState(0);
     const [modalOpen, setModalOpen] = useState(false);
+    const [enlaces, setEnlaces] = useState([])
 
+    
     // const images = ['/propaganda5.png', '/propaganda1.png', '/propaganda2.png', '/propaganda3.png', '/propaganda4.png'];
     const [images, setImages] = useState([])
 
@@ -16,6 +18,8 @@ const Carrousel = () => {
         bdMuni.get('/v1/portada')
             .then(res => {
                 const fotos = res?.data?.map(item => `https://sv-yptplguxwm.cloud.elastika.pe/storage/fotosPortada/${item.foto}`) || [];
+                const enlace = res?.data?.map(item => `${item.enlace}`) || [];
+                setEnlaces(enlace)
                 setImages(fotos);
             })
             .catch(err => console.log(err))
@@ -30,10 +34,10 @@ const Carrousel = () => {
     };
 
     const openModal = () => {
-
-
         setModalOpen(true);
-
+        if(enlaces[currentImage]){
+            window.open(enlaces[currentImage])
+        }            
 
     };
 
@@ -71,7 +75,7 @@ const Carrousel = () => {
                             }}
                         ></div>
                         <img
-                            onClick={openModal}
+                            onClick={() => openModal(currentImage)}
                             src={images[currentImage]}
                             alt={`anuncio imagen ${currentImage + 1}`}
                             style={{

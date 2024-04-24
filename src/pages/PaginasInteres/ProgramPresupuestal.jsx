@@ -16,7 +16,7 @@ const ProgramPresupuestal = () => {
                 </h1>
             </Box>
             <iframe
-                src="https://profound-squirrel-685058.netlify.app/programacion-presupuestal"
+                src="https://profound-squirrel-685058.netlify.app/proyectos-inversion"
                 title="Página Embebida"
                 width="100%"
                 height="800px"
