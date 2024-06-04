@@ -1,10 +1,15 @@
-import { FileDownload, PictureAsPdfOutlined } from '@mui/icons-material'
+import { FileDownload, PictureAsPdfOutlined, RemoveRedEyeOutlined } from '@mui/icons-material'
 import { Badge, Box, Button, Chip, Container, Typography } from '@mui/material'
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ListaNormativa = ({
     normativa
 }) => {
+    const navigate = useNavigate()
+    const verNormativaId = (id) => {
+        navigate(`/normativa/${id}`)
+    }
     return (
         <Box
             padding={2}
@@ -48,6 +53,15 @@ const ListaNormativa = ({
             >
                 {normativa?.attributes?.descripcion}
             </Typography>
+            <Button
+                onClick={() => verNormativaId(normativa?.attributes?.id)}
+                sx={{
+                    color: '#12B3F3'
+                }}
+            >
+                <RemoveRedEyeOutlined />
+                Ver
+            </Button>
             <Button
                 onClick={() => window.open(normativa?.attributes?.archivo)}
                 sx={{

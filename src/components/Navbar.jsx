@@ -40,9 +40,9 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
         setMenu(!menu);
     };
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, [menu]);
+    // useEffect(() => {
+    //     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // }, [menu]);
     
     return (
         <>

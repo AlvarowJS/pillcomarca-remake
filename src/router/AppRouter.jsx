@@ -23,6 +23,8 @@ import AccesoInfoPage from '../pages/AccesoInfoPage/AccesoInfoPage'
 import Agenda from '../pages/Actividad/Agenda'
 import ProyectoInversion from '../pages/PaginasInteres/ProyectoInversion'
 import ProgramPresupuestal from '../pages/PaginasInteres/ProgramPresupuestal'
+import NormativaPagina from '../pages/Normativa/NormativaPagina'
+import ScrollToTop from '../components/ScrollToTop'
 
 const AppRouter = () => {
 
@@ -33,6 +35,7 @@ const AppRouter = () => {
     <>
       <BrowserRouter>
         <>
+          <ScrollToTop />
           <Navbar
             menu={menu}
             setMenu={setMenu}
@@ -47,6 +50,7 @@ const AppRouter = () => {
             <Route path='/documentos' element={<DocumentosGestion />} />
             <Route path='/seguridad-ciudadana' element={<Seguridad />} />
             <Route path='/normativa' element={<Normativa />} />
+            <Route path='/normativa/:id' element={<NormativaPagina />} />
             <Route path='/servicios' element={<Servicio />} />
             <Route path='/mision-vision' element={<MisionVision />} />
             <Route path='/fut' element={<Fut />} />
