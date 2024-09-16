@@ -25,6 +25,7 @@ import ProyectoInversion from '../pages/PaginasInteres/ProyectoInversion'
 import ProgramPresupuestal from '../pages/PaginasInteres/ProgramPresupuestal'
 import NormativaPagina from '../pages/Normativa/NormativaPagina'
 import ScrollToTop from '../components/ScrollToTop'
+import Saldos from '../pages/SaldosBalance/Saldos'
 
 const AppRouter = () => {
 
@@ -68,6 +69,8 @@ const AppRouter = () => {
             <Route path='/presupuesto-participativo' element={<PresuPart />} />
 
             <Route path='/acceso-informacion' element={<AccesoInfoPage />} />
+
+            <Route path='/saldos-balance' element={<Saldos />} />
 
             {/* Rutas de interes */}
             <Route path='/paginas-interes/proyectos-inversion' element={<ProyectoInversion />} />

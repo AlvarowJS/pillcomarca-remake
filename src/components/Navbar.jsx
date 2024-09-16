@@ -5,7 +5,8 @@ import { Link, Menu, MenuItem, AppBar, Box, Button, Switch, Toolbar, Typography 
 
 import PersonIcon from '@mui/icons-material/Person';
 import MenuIcon from '@mui/icons-material/Menu';
-import { KeyboardArrowDown } from '@mui/icons-material';
+import { FacebookOutlined, Instagram, KeyboardArrowDown } from '@mui/icons-material';
+import 'boxicons/css/boxicons.min.css';
 const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
 
     const navbar = useRef()
@@ -39,11 +40,19 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
     const handleMenuToggle = () => {
         setMenu(!menu);
     };
-
+    const insta = () => {
+        window.open("https://www.instagram.com/municipalidad_pillcomarca/", "_blank")
+    }
+    const facebookLink = () => {
+        window.open("https://www.facebook.com/MunicipalidadDistritaldePillcoMarca", "_blank")
+    }
+    const tiktokLink = () => {
+        window.open("https://www.tiktok.com/@municipalidadpillcomarca", "_blank")
+    }
     // useEffect(() => {
     //     window.scrollTo({ top: 0, behavior: 'smooth' });
     // }, [menu]);
-    
+
     return (
         <>
             <AppBar>
@@ -209,14 +218,12 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                         </NavLink>
                     </Box>
                     <Box flex={1} />
-                    <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' } }}>
+                    <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' }, color: '#024C90', display: 'flex', gap: 1, paddingTop: 2}}>
+                        <FacebookOutlined onClick={facebookLink} sx={{ cursor: 'pointer' }} />
+                        <Instagram onClick={insta} sx={{ cursor: 'pointer', color: '#F04F0F' }} />
+                        <i className='bx bxl-tiktok' style={{ fontSize: 25, cursor: 'pointer', color: 'black' }} onClick={tiktokLink}></i>
 
-                        <Link>
-                            <Button onClick={tramiteDocumentario} sx={{ color: '#20A9D8', fontWeight: 'bold', width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
-                                <PersonIcon />
-                                SysDoc
-                            </Button>
-                        </Link>
+                        
                     </Box>
 
                     <Box sx={{ marginX: 3, display: { xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' } }}>

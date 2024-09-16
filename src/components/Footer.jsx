@@ -6,13 +6,32 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { FacebookOutlined, Instagram, Twitter } from '@mui/icons-material';
+import 'boxicons/css/boxicons.min.css';
+
 
 const Footer = () => {
     const insta = () => {
-        window.open("https://www.instagram.com/peru.exploring/", "_blank")
+        window.open("https://www.instagram.com/municipalidad_pillcomarca/", "_blank")
+    }
+    const facebookLink = () => {
+        window.open("https://www.facebook.com/MunicipalidadDistritaldePillcoMarca", "_blank")
+    }
+    const tiktokLink = () => {
+        window.open("https://www.tiktok.com/@municipalidadpillcomarca", "_blank")
     }
 
     const wssp = () => {
+        window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+
+    }
+
+    const miCarrearaLink = () => {
+        window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+
+    }
+
+    const capacitateLink = () => {
         window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
 
     }
@@ -23,24 +42,13 @@ const Footer = () => {
             <Box sx={{
                 backgroundColor: '#27292E', color: 'white', marginTop: 10, boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)',
                 paddingBottom: 5,
-                paddingTop: 5
+                paddingTop: 5,
+
             }}>
 
-                <Grid container spacing={1}>
-                    <Grid item xs={6} sm={3} >
-                        <Box>
-
-                            <img
-                                src="/logo2.png"
-                                alt="logo municipalidad de pillco"
-                                width='100%'
-                                height='50%'
-                                style={{ marginTop: 20 }}
-                            />
-                        </Box>
-                    </Grid>
-                    <Grid item xs={6} sm={3}>
-                        <Box sx={{ fontStyle: 'italic' }}>
+                <Grid container spacing={1} alignContent="center" sx={{ paddingX: { xs: 2, sm: 10, md: 20, lg: 40 } }}>
+                    <Grid item xs={12} sm={4} mb={2}>
+                        <Box sx={{ fontStyle: 'italic', marginLeft: 5 }}>
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>ENLACES IMPORTANTES</Typography>
                             <Typography color={'#ffff'} >
                                 <NavLink to='/historia'>
@@ -90,10 +98,19 @@ const Footer = () => {
                                     Mesa de partes virtual
                                 </NavLink>
                             </Typography>
+                            <Typography sx={{ fontWeight: 'bold', marginTop: 3 }}>
+                                Redes Sociales
+                            </Typography>
+                            <Box sx={{ display: 'flex', gap: 4 }}>
 
+                                <FacebookOutlined onClick={facebookLink} sx={{ cursor: 'pointer' }} />
+                                <Instagram onClick={insta} sx={{ cursor: 'pointer' }} />
+                                <i className='bx bxl-tiktok' style={{ fontSize: 25, cursor: 'pointer' }} onClick={tiktokLink}></i>
+
+                            </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={6} sm={3} sx={{ borderLeft: 'white 1px solid '}}>
+                    <Grid item xs={12} sm={4} mb={2}>
                         <Box sx={{ fontStyle: 'italic' }}>
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>ENLACES DE INTERES</Typography>
                             <Typography color={'#ffff'} >
@@ -105,24 +122,45 @@ const Footer = () => {
                                 <NavLink to='/paginas-interes/programacion-presupuestal'>
                                     Programación Presupuestal 2024
                                 </NavLink>
-                            </Typography>                                                        
+                            </Typography>
+                            <Typography color={'#ffff'} >
+                                <NavLink to='/saldos-balance'>
+                                    Saldos de balance
+                                </NavLink>
+                            </Typography>
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold', marginTop: 4 }}>
+                               Ministerio de Trabajo y Promoción del Empleo 
+                            </Typography>
+                            <Typography color={'#ffff'} sx={{cursor: 'pointer'}}
+                                onClick={miCarrearaLink}
+                            >
+                                Mi carrera
+                            </Typography>
+                            <Typography color={'#ffff'} sx={{cursor: 'pointer'}}
+                                onClick={capacitateLink}
+                            >
+
+                                Capacita-T 
+                            </Typography>
+
                         </Box>
                     </Grid>
-                    <Grid item xs={6} sm={3} sx={{ borderLeft: 'white 1px solid ', fontStyle: 'italic'}} >
+                    <Grid item xs={12} sm={4} mb={2} sx={{ fontStyle: 'italic' }} >
                         <Box >
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>HORARIO DE ATENCIÓN</Typography>
                             <Typography color={'#ffff'} >
-                               8:00 am hasta la 1:00 pm y
+                                8:00 am hasta la 1:00 pm y
                             </Typography>
                             <Typography color={'#ffff'} >
                                 1:45 am hasta la 4:45 pm
-                            </Typography>                                                        
+                            </Typography>
                         </Box>
+
                     </Grid>
                 </Grid>
                 <Grid>
                     <Grid item xs={12} sm={6}>
-                        <Box sx={{ paddingX: 5 }}>
+                        <Box sx={{ paddingX: { xs: 2, sm: 10, md: 20, lg: 40 } }}>
                             <h2 style={{ fontWeight: 'bold', color: '#ffff' }}>Ubicación</h2>
                             <iframe style={{
                                 width: '100%',
@@ -137,6 +175,13 @@ const Footer = () => {
 
                             </iframe>
                         </Box>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Grid item xs={12} sm={6} sx={{ textAlign: 'center', marginTop: 4 }}>
+                        <Typography>
+                            © Municipalidad Distrital de Pillco Marca - Todos los Derechos Reservados
+                        </Typography>
                     </Grid>
                 </Grid>
             </Box>
