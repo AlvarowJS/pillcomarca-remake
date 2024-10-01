@@ -78,10 +78,11 @@ const Normativa = () => {
             <Box marginTop={12}>
                 <Box sx={{
                     backgroundColor: '#12B1FA',
-                    width: '50%',
+                    width: {sx: '50%', xs: '80%'},
                     borderTopRightRadius: 10,
                     borderBottomRightRadius: 10,
-                    marginBottom: 3
+                    marginBottom: 3,
+                    paddingRight: 10
                 }}>
                     <h1 style={{ color: 'white', paddingLeft: 10 }}>
                         <DocumentScanner />

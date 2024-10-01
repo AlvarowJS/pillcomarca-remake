@@ -26,6 +26,8 @@ import ProgramPresupuestal from '../pages/PaginasInteres/ProgramPresupuestal'
 import NormativaPagina from '../pages/Normativa/NormativaPagina'
 import ScrollToTop from '../components/ScrollToTop'
 import Saldos from '../pages/SaldosBalance/Saldos'
+import MunicipioSaludable from '../pages/MunicipioSaludable/MunicipioSaludable'
+import GestionResiduos from '../pages/MunicipioSaludable/ResiduosSolidos/GestionResiduos'
 
 const AppRouter = () => {
 
@@ -75,6 +77,11 @@ const AppRouter = () => {
             {/* Rutas de interes */}
             <Route path='/paginas-interes/proyectos-inversion' element={<ProyectoInversion />} />
             <Route path='/paginas-interes/programacion-presupuestal' element={<ProgramPresupuestal />} />
+
+            {/* Municipios saludables */}
+            <Route path='/municipio-saludable' element={<MunicipioSaludable />} />
+            <Route path='/municipio-saludable/gestion-integral' element={<GestionResiduos />} />
+
           </Routes>
           <Footer />
 

@@ -22,17 +22,17 @@ const Footer = () => {
     }
 
     const wssp = () => {
-        window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+        window.open("https://api.whatsapp.com/send?phone=51900659235&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
 
     }
 
     const miCarrearaLink = () => {
-        window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+        window.open("https://micarrera.trabajo.gob.pe/", "_blank")
 
     }
 
     const capacitateLink = () => {
-        window.open("https://api.whatsapp.com/send?phone=51922058965&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+        window.open("https://capacitacionlaboral.trabajo.gob.pe/", "_blank")
 
     }
 

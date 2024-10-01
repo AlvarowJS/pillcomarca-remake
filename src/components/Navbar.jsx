@@ -217,6 +217,15 @@ const Navbar = ({ setIdioma, idioma, setMenu, menu }) => {
                             </Link>
                         </NavLink>
                     </Box>
+                    <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block' } }}>
+                        <NavLink to='/municipio-saludable' >
+                            <Link>
+                                <Button sx={{ width: { xl: 155, lg: 130 }, fontSize: { xl: 15, lg: 15 }, paddingLeft: 0, paddingRight: 0 }}>
+                                    Municipio Saludable
+                                </Button>
+                            </Link>
+                        </NavLink>
+                    </Box>
                     <Box flex={1} />
                     <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' }, color: '#024C90', display: 'flex', gap: 1, paddingTop: 2}}>
                         <FacebookOutlined onClick={facebookLink} sx={{ cursor: 'pointer' }} />

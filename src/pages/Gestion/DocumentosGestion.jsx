@@ -20,8 +20,8 @@ const DocumentosGestion = () => {
                 sx={{ marginTop: 12 }}
             >
                 <Box sx={{
-                    backgroundColor: '#12B1FA',
-                    width: '50%',
+                    backgroundColor: '#12B1FA',                    
+                    width: {sn: '50%', xs: '80%'},
                     borderTopRightRadius: 10,
                     borderBottomRightRadius: 10,
                     marginBottom: 3
