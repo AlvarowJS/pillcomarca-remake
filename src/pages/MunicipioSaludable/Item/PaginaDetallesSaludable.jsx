@@ -1,11 +1,19 @@
 import { Box } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import bdSaludable from '../../../api/bdSaludable'
 
-const GestionResiduos = () => {
+const PaginaDetallesSaludable = () => {
     const location = useLocation()
-    const { detalles } = location.state || {}
-    
+    const [detalles, setDetalles] = useState()
+
+    useEffect(() => {
+        const { pathname } = location; // Obtiene la ruta actual
+        const pathSegment = pathname.split('/').pop();
+        const selectedItem = bdSaludable.find(item => item.link === `/${pathSegment}`);
+        setDetalles(selectedItem)
+    }, [])
+
     return (
         <>
             <Box sx={{ marginTop: 12, textAlign: 'center', paddingBottom: 5 }}>
@@ -15,7 +23,7 @@ const GestionResiduos = () => {
                     fontWeight: 'bold',
                     fontSize: '2.5rem',
                 }}>
-                    {detalles?.title}  
+                    {detalles?.title}
                 </h1>
                 <p style={{
                     color: '#7f8c8d', // Subtitulo o autor en gris claro
@@ -30,7 +38,8 @@ const GestionResiduos = () => {
                     key={index}
                     sx={{
                         display: 'flex',
-                        flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
+                        // flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
+                        flexDirection: { xs: 'column', sm: index % 2 === 0 ? 'row' : 'row-reverse' }, // Cambia a columna en pantallas pequeñas
                         alignItems: 'center',
                         justifyContent: 'space-between',
                         padding: 4,
@@ -46,7 +55,8 @@ const GestionResiduos = () => {
                 >
                     <Box
                         sx={{
-                            width: '50%',
+                            // width: '50%',
+                            width: { xs: '100%', sm: '50%' }, // Full width en pantallas pequeñas
                             paddingRight: index % 2 === 0 ? 3 : 0,
                             paddingLeft: index % 2 !== 0 ? 3 : 0,
                             textAlign: 'left',
@@ -80,7 +90,9 @@ const GestionResiduos = () => {
                         </p>
                     </Box>
 
-                    <Box sx={{ width: '50%' }}>
+                    {/* <Box sx={{ width: '50%' }}> */}
+                    <Box sx={{ width: { xs: '100%', sm: '50%' }, display: 'flex', justifyContent: 'center' }}>
+
                         <img
                             src={detalle?.fotos}
                             width="100%"
@@ -97,4 +109,5 @@ const GestionResiduos = () => {
     )
 }
 
-export default GestionResiduos
+
+export default PaginaDetallesSaludable

@@ -22,7 +22,7 @@ const Footer = () => {
     }
 
     const wssp = () => {
-        window.open("https://api.whatsapp.com/send?phone=51900659235&text=Hola%20tengo%20una%20consulta%20%F0%9F%98%80", "_blank")
+        window.open("https://api.whatsapp.com/send?phone=51900659235&text=Hola", "_blank")
 
     }
 
@@ -129,18 +129,18 @@ const Footer = () => {
                                 </NavLink>
                             </Typography>
                             <Typography color={'#ffff'} sx={{ fontWeight: 'bold', marginTop: 4 }}>
-                               Ministerio de Trabajo y Promoción del Empleo 
+                                Ministerio de Trabajo y Promoción del Empleo
                             </Typography>
-                            <Typography color={'#ffff'} sx={{cursor: 'pointer'}}
+                            <Typography color={'#ffff'} sx={{ cursor: 'pointer' }}
                                 onClick={miCarrearaLink}
                             >
                                 Mi carrera
                             </Typography>
-                            <Typography color={'#ffff'} sx={{cursor: 'pointer'}}
+                            <Typography color={'#ffff'} sx={{ cursor: 'pointer' }}
                                 onClick={capacitateLink}
                             >
 
-                                Capacita-T 
+                                Capacita-T
                             </Typography>
 
                         </Box>
@@ -155,10 +155,20 @@ const Footer = () => {
                                 1:45 am hasta la 4:45 pm
                             </Typography>
                         </Box>
+                        <Box>
+                            <Typography color={'#ffff'} sx={{ fontWeight: 'bold' }}>TELÉFONO</Typography>
+                            <Typography color={'#ffff'} >
+                                900659235 
+                                <WhatsAppIcon onClick={wssp} sx={{marginLeft: 2, cursor: 'pointer'}}/>
+                            </Typography>
+                            
+                        </Box>
 
                     </Grid>
                 </Grid>
-                <Grid>
+                <Grid
+                    sx={{ paddingX: 5 }}
+                >
                     <Grid item xs={12} sm={6}>
                         <Box sx={{ paddingX: { xs: 2, sm: 10, md: 20, lg: 40 } }}>
                             <h2 style={{ fontWeight: 'bold', color: '#ffff' }}>Ubicación</h2>

@@ -13,13 +13,13 @@ const CardSalud = ({ item }) => {
         <ImageListItem 
             key={item.img}
             onClick={handleRedirect}
-            sx={{ cursor: 'pointer', transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.05)' } }} // Animación y cursor
+            sx={{ cursor: 'pointer', transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.05)' } }}
         >
             <img
                 srcSet={`${item.img}`}
                 src={`${item.img}`}
                 alt={item.title}
-                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px' }} // Ajustar imagen y añadir border-radius
+                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px' }}
                 loading="lazy"
             />
             <ImageListItemBar
@@ -35,8 +35,8 @@ const CardSalud = ({ item }) => {
                     </IconButton>
                 }
                 sx={{
-                    background: 'rgba(0, 0, 0, 0.7)', // Fondo semi-transparente para el texto
-                    borderBottomLeftRadius: '8px', // Mantener el border-radius consistente
+                    background: 'rgba(0, 0, 0, 0.7)',
+                    borderBottomLeftRadius: '8px',
                     borderBottomRightRadius: '8px'
                 }}
             />

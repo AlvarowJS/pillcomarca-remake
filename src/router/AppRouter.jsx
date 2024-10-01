@@ -27,7 +27,7 @@ import NormativaPagina from '../pages/Normativa/NormativaPagina'
 import ScrollToTop from '../components/ScrollToTop'
 import Saldos from '../pages/SaldosBalance/Saldos'
 import MunicipioSaludable from '../pages/MunicipioSaludable/MunicipioSaludable'
-import GestionResiduos from '../pages/MunicipioSaludable/ResiduosSolidos/GestionResiduos'
+import PaginaDetallesSaludable from '../pages/MunicipioSaludable/Item/PaginaDetallesSaludable'
 
 const AppRouter = () => {
 
@@ -80,7 +80,11 @@ const AppRouter = () => {
 
             {/* Municipios saludables */}
             <Route path='/municipio-saludable' element={<MunicipioSaludable />} />
-            <Route path='/municipio-saludable/gestion-integral' element={<GestionResiduos />} />
+            {/* <Route path='/municipio-saludable/gestion-integral' element={<PaginaDetallesSaludable />} />
+            <Route path='/municipio-saludable/saneamiento-rural' element={<PaginaDetallesSaludable />} />
+            <Route path='/municipio-saludable/amor-hierro' element={<PaginaDetallesSaludable />} /> */}
+            <Route path="/municipio-saludable/:categoria" element={<PaginaDetallesSaludable />} />
+
 
           </Routes>
           <Footer />
