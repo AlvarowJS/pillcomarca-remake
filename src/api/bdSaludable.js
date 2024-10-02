@@ -48,13 +48,13 @@ export const bdSaludable = [
                 fotos: 'https://cdn.www.gob.pe/uploads/document/file/7024761/1032089-imagen4.PNG'
             },
             {
-                item: '',
-                descripcion: '',
-                fotos: ''
+                item: 'Eje temático',
+                descripcion: 'Alimentación Y Nutrición Saludable – Recuperación del SAP para brindar agua de calidad a la población rural.',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026959/1032288-imagen22.PNG'
             },
             {
-                item: '',
-                descripcion: '',
+                item: 'Síntesis de la experiencia',
+                descripcion: 'El Área Técnica de Saneamiento de la Municipalidad Distrital de Pillco Marca se encuentra enfocado a brindar agua de calidad en el ámbito rural, encaminados a mejorar la prestación de los servicios de saneamiento, realizando las siguientes actividades de acuerdo a los 3 indicadores que dictan el Programa Nacional de Saneamiento Rural (PNSR):',
                 fotos: ''
             },
             {
