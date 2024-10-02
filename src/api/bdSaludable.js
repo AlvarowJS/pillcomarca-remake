@@ -54,6 +54,7 @@ export const bdSaludable = [
             },
             {
                 item: 'Síntesis de la experiencia',
+<<<<<<< HEAD
                 descripcion: `
                     El Área Técnica de Saneamiento de la Municipalidad Distrital de Pillco Marca 
                     se encuentra enfocada en brindar agua de calidad en el ámbito rural, 
@@ -84,6 +85,10 @@ export const bdSaludable = [
                     Se vienen desarrollando las actividades anteriormente mencionadas en los 5 centros poblados rurales (Vichaycoto, San Lorenzo de Canchapara, Pumacan, Vicsacocha y Rayancatac) del distrito, ya que ellos se encuentran en estado malo y regular de acuerdo al último diagnóstico situacional.
                 `,
                 fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026960/1032288-imagen33.PNG'
+=======
+                descripcion: 'El Área Técnica de Saneamiento de la Municipalidad Distrital de Pillco Marca se encuentra enfocado a brindar agua de calidad en el ámbito rural, encaminados a mejorar la prestación de los servicios de saneamiento, realizando las siguientes actividades de acuerdo a los 3 indicadores que dictan el Programa Nacional de Saneamiento Rural (PNSR):',
+                fotos: ''
+>>>>>>> eacb26ca22d956f5da008ec0b32e9b97b3fc2d91
             },
             {
                 item: 'Problema Identificado',
