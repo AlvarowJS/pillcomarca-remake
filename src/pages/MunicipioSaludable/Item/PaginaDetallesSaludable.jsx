@@ -1,7 +1,8 @@
-import { Box } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import bdSaludable from '../../../api/bdSaludable'
+import { ArrowBack } from '@mui/icons-material'
 
 const PaginaDetallesSaludable = () => {
     const location = useLocation()
@@ -16,7 +17,20 @@ const PaginaDetallesSaludable = () => {
 
     return (
         <>
-            <Box sx={{ marginTop: 12, textAlign: 'center', paddingBottom: 5 }}>
+            <Link to='/municipio-saludable'>
+
+                <Button sx={{
+                    alignItems: 'center',
+                    justifyItems: 'center',
+                    marginTop: 12,                    
+
+                }}
+                >
+                    <ArrowBack />
+                    Volver
+                </Button>
+            </Link>
+            <Box sx={{ textAlign: 'center', paddingBottom: 5 }}>
                 <h1 style={{
                     color: '#2c3e50', // Color oscuro elegante
                     paddingLeft: 10,

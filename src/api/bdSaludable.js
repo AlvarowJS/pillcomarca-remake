@@ -159,9 +159,44 @@ export const bdSaludable = [
                 fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026769/1032270-img_1-2.jpeg'
             },
             {
-                item: '',
-                descripcion: '',
-                fotos: ''
+                item: 'Síntesis de la Experiencia Exitosa',
+                descripcion: 'Desarrollo infantil temprano, priorizamos la salud de nuestros niños y niñas, desde el eje de agua segura y alimentación saludable ricos en hierro',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026771/1032270-img_3-2.jpeg'
+            },
+            {
+                item: 'Objetivos y Metas',
+                descripcion: 'Objetivo General \n ✔ Llegar a toda la población con niños menores de 36 meses para una buena atención oportuna y de calidad, para reducir la anemia en nuestro distrito. \n ✔ Las redes sociales como aliado importante para llegar a toda la población Pillcomarquina, verificación de las visitas a travez de una plataforma Odoo. \n \n Metas \n ✔ Trabajo articulado con saludos \n ✔ Reunión con el equipo IAL para la verificación de brechas \n Vemdimia HIERRO - VIDA \n ✔ Trabajo con los actores sociales en visita de calidad \n ✔ Familias visitadas oprtunamente \n ✔ Publicidad: A travez de trípticos, perifoneos, página de facebook, tik tok.',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026773/1032270-img_5-2.jpeg'
+            },
+            {
+                item: 'Estrategias',
+                descripcion: '✔ Capacitación en los temas específicos a los agentes comunitarios de salud, para realizar una visita domiciliaria efectiva. \n ✔ Talleres a los actores sociales y/o agentes comunitarios de salud con sesión de platos demostrativos de alimentos ricos en hierro y el manejo de lavado de manos \n Identificación de agua segura y clorada, trabajo conjunto con el Centro de Salud Potracancha y el municipio \n ✔ Se cuenta con la vendimia HIERRO - VIDA en el Centro de Salud Potracancha para los niños que realizan su atención oportuna \n ✔ Charla de orientación y elaboración de alimentos ricos en hierro de origen animal a las madres que asisten al centro de salud para el control CRED de su niño.',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7026772/1032270-img_4-2.jpeg'
+            },
+            {
+                item: 'Logros Alcansados',
+                descripcion: 'La implementación de la política pública "CRECIENDO CON AMOR EN PILLCO MARCA, POR QUE TU AMOR ES DE HIERRO"',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7032549/1032819-icon2.jfif'
+            },
+            {
+                item: 'Resultados Obtenidos',
+                descripcion: 'Ha llevado a una disminución en la encidencia de anemia en niños menores de 36 meses pasando de un 30% a un 15% y se logró la reducción de la desnutrición crónica del 12% al 8%, Se ha evidenciado trabajo articulado entre el gobierno local y Centro de Salud Potracancha.',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7032548/1032819-icon1.jfif'
+            },
+            {
+                item: 'Lecciones Aprendidas',
+                descripcion: '✔ Diseño de una ruta de trabajo con resultados a corto, mediano y largo plazo gracias al análisis de los indicadores, el mapeo y sectorización de la población objetivo, evidenciando las causas de los problemas de salud vigentes (anemia, desnutrición, cobertura de paquete integrado de salud priorizados) revisadas en las reuniones de la IAL. \n ✔ La participación ciudadana a travez de la formación de actores sociales del ámbito del distrito, con competencias a favor de la primera infancia, garantiza el acercamiento a familias, la identificación de familias en riesgo y sostenibilidad en la promoción de hábitos saludables y alimenticios.   ',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7032552/1032819-icon5.PNG'
+            },
+            {
+                item: 'Financiamiento',
+                descripcion: 'Año: 2021 Presupuesto Total: 95.614 Ejecucion del Presupuesto: 99.7% \n Año: 2022 Presupuesto Total: 87.517 Ejecucion del Presupuesto: 96.2% \n Año: 2023 Presupuesto Total: 127.603 Ejecucion del Presupuesto: 81.6% \n Año: 2024 Presupuesto Total: 142.877 Ejecucion del Presupuesto: 50.4% (recursos propios de la municipalidad).',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7032551/1032819-icon4.jpg'
+            },
+            {
+                item: 'Responsable de la Experiencia',
+                descripcion: '✔ Alcaldesa: Ing. Diana Plejo Carrillo. \n ✔ Gerencia de Desarrollo Social y Económico \n ✔ Gerente del Class Potracancha \n ✔ Responsable de Promsa \n ✔ Actores Sociales \n ✔ Responsable de Padrón Nominal',
+                fotos: 'https://cdn.www.gob.pe/uploads/document/file/7032550/1032819-icon3.jpg'
             }
         ],
         link: '/amor-hierro'
