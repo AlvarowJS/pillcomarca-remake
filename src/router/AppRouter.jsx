@@ -28,6 +28,9 @@ import ScrollToTop from '../components/ScrollToTop'
 import Saldos from '../pages/SaldosBalance/Saldos'
 import MunicipioSaludable from '../pages/MunicipioSaludable/MunicipioSaludable'
 import PaginaDetallesSaludable from '../pages/MunicipioSaludable/Item/PaginaDetallesSaludable'
+import Negocio from '../pages/Negocio/Negocio'
+
+
 
 const AppRouter = () => {
 
@@ -85,7 +88,7 @@ const AppRouter = () => {
             <Route path='/municipio-saludable/amor-hierro' element={<PaginaDetallesSaludable />} /> */}
             <Route path="/municipio-saludable/:categoria" element={<PaginaDetallesSaludable />} />
 
-
+            <Route path='/negocios' element={<Negocio />} />
           </Routes>
           <Footer />
 
