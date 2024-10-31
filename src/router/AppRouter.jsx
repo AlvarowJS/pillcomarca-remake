@@ -29,6 +29,7 @@ import Saldos from '../pages/SaldosBalance/Saldos'
 import MunicipioSaludable from '../pages/MunicipioSaludable/MunicipioSaludable'
 import PaginaDetallesSaludable from '../pages/MunicipioSaludable/Item/PaginaDetallesSaludable'
 import Negocio from '../pages/Negocio/Negocio'
+import NegocioPage from '../pages/Negocio/NegocioPage'
 
 
 
@@ -89,6 +90,7 @@ const AppRouter = () => {
             <Route path="/municipio-saludable/:categoria" element={<PaginaDetallesSaludable />} />
 
             <Route path='/negocios' element={<Negocio />} />
+            <Route path='/negocios/:id' element={<NegocioPage />} />
           </Routes>
           <Footer />
 
