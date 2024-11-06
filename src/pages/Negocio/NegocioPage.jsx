@@ -35,40 +35,6 @@ const NegocioPage = ({ negocio }) => {
     }
   }, [QR]);
 
-  // Función para detectar y mostrar el ícono de cada red social
-  const getSocialMediaIcons = () => {
-    if (!data?.redsocial) return null;
-
-    const socialLinks = [
-      { name: "Facebook", icon: FacebookIcon, color: '#3b5998', identifier: "facebook.com" },
-      { name: "Twitter", icon: TwitterIcon, color: '#1DA1F2', identifier: "twitter.com" },
-      { name: "Instagram", icon: InstagramIcon, color: '#E1306C', identifier: "instagram.com" },
-      { name: "LinkedIn", icon: LinkedInIcon, color: '#0077B5', identifier: "linkedin.com" },
-    ];
-
-    return socialLinks.map(({ name, icon: Icon, color, identifier }, index) => (
-      data.redsocial.includes(identifier) && (
-        <Box key={index} sx={{ textAlign: 'center' }}>
-          <a href={data.redsocial} target="_blank" rel="noopener noreferrer">
-            <Icon fontSize="large" sx={{
-              color: color,
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer',
-              '&:hover': { transform: 'scale(1.3)' }
-            }} />
-          </a>
-          <Typography variant="caption" sx={{
-            backgroundColor: '#f1f1f1',
-            borderRadius: '5px',
-            padding: '2px 5px',
-            marginTop: '5px',
-            display: 'block'
-          }}>{name}</Typography>
-        </Box>
-      )
-    ));
-  };
-
   return (
     <>
       <Link to='/Negocios'>
@@ -123,11 +89,13 @@ const NegocioPage = ({ negocio }) => {
           <Grid item xs={12} md={5}>
             <Box sx={{ marginTop: 5 }}>
               <Typography variant="h2" sx={{ fontSize: '22px', color: '#808080', fontWeight: '500' }}>
-                Redes sociales
+                  RED SOCIAL DEL NEGOCIO
               </Typography>
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '30px', gap: '20px', flexDirection: { xs: 'column', md: 'row' } }}>
-              {getSocialMediaIcons()}
+            <Box sx={{ display: 'flex', justifyContent: 'end', alignItems: 'center', marginTop: '30px', gap: '100px', flexDirection: { xs: 'column', md: 'row' } }}>
+              
+              <div style={{ fontSize: '18px', color: '#333' }} dangerouslySetInnerHTML={{ __html: data?.redsocial }} />
+
             </Box>
           </Grid>
           <Grid item xs={12} md={7}>

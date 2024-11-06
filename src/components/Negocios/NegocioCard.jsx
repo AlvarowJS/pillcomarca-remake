@@ -1,4 +1,4 @@
-import { Grid, Card, CardContent, Typography, CardMedia, Box } from '@mui/material';
+import { Grid, Card, CardContent, Typography, CardMedia, Button, Box } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,34 +13,26 @@ const NegocioCard = ({ negocio }) => {
   }
 
   return (
-    <Grid item xs={12} md={9}>
-      <Box sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '2rem',
-        width: { xs: '100%', sm: '336px' },
-        justifyContent: 'flex-start'
-      }}>
-        <CardMedia
-          onClick={() => verNegocio(negocio?.id)}
-          component="img"
-          height="150"
-          image={`${URLIMAGENES}${negocio?.imagen}`} 
-          alt={negocio?.nombrenegocio}
-        />
-        <CardContent>
-          <Typography variant="h6" align="center" gutterBottom>
-            {negocio?.nombrenegocio}
-          </Typography>
-          <Typography>Dirección: {negocio?.direccion}</Typography>
-          <Typography>Lugar: {negocio?.lugar}</Typography>
-          <Typography>Razón Social: {negocio?.razonsocial}</Typography>
-          <Typography>Red Social: {negocio?.redsocial}</Typography>
-          <Typography>Subcategoría ID: {negocio?.subcategoria.rubro}</Typography>
-        </CardContent>
-      </Box>
-
-    </Grid>
+    <Card variant="outlined" sx={{ width: 300, margin: 2 }}>
+      {/* Mostrar la imagen en la parte superior de la tarjeta */}
+      <CardMedia
+        onClick={() => verNegocio(negocio?.id)}
+        component="img"
+        height="150"
+        image={`${URLIMAGENES}${negocio?.imagen}`} // Aquí debe ir la URL de la imagen
+        alt={negocio?.nombrenegocio}
+      />
+      <CardContent>
+        {/* Nombre del negocio centrado */}
+        <Typography variant="h6" align="center" gutterBottom>
+          {negocio?.nombrenegocio}
+        </Typography>
+        <Typography>Dirección: {negocio?.direccion}</Typography>
+        <Typography>Lugar: {negocio?.lugar}</Typography>
+        <Typography>Razón Social: {negocio?.razonsocial}</Typography>
+        <Typography>Tipo de Negocio: {negocio?.subcategoria.rubro}</Typography>
+      </CardContent>
+    </Card>
   )
 }
 
