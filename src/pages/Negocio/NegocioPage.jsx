@@ -4,10 +4,6 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import bdNegocio from '../../api/bdNegocio';
 import { Box, Button, Grid, Typography, Paper } from '@mui/material';
 import { ArrowBack } from '@mui/icons-material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ScanIcon from '@mui/icons-material/QrCodeScanner';
 
 const URL = '/v1/buscar-negocio/';
@@ -89,14 +85,17 @@ const NegocioPage = ({ negocio }) => {
           <Grid item xs={12} md={5}>
             <Box sx={{ marginTop: 5 }}>
               <Typography variant="h2" sx={{ fontSize: '22px', color: '#808080', fontWeight: '500' }}>
-                  RED SOCIAL DEL NEGOCIO
+                Red social del negocio
               </Typography>
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'end', alignItems: 'center', marginTop: '30px', gap: '100px', flexDirection: { xs: 'column', md: 'row' } }}>
-              
-              <div style={{ fontSize: '18px', color: '#333' }} dangerouslySetInnerHTML={{ __html: data?.redsocial }} />
+            <Grid item xs={12} lg={16} sx={{ paddingLeft: { xs: '1px', md: '21px' } }}>
+              <Box sx={{
+                width: '100%', overflowX: 'auto', marginTop: '30px',
+              }}>
+                <div dangerouslySetInnerHTML={{ __html: data?.redsocial }} />
 
-            </Box>
+              </Box>
+            </Grid>
           </Grid>
           <Grid item xs={12} md={7}>
             <Box sx={{ marginTop: 5 }}>
