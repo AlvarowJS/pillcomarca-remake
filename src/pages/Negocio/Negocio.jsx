@@ -3,6 +3,7 @@ import NegocioCard from '../../components/Negocios/NegocioCard';
 import bdNegocio from '../../api/bdNegocio';
 import { Box, TextField, Button, Select, InputLabel, MenuItem, FormControl, Grid } from '@mui/material';
 import { HouseOutlined } from '@mui/icons-material';
+import NegocioPaginacion from '../../components/Negocios/NegocioPaginacion';
 
 const URL = '/v1/buscar-negocio';
 
@@ -11,23 +12,31 @@ const Negocio = () => {
     const [nombrenegocio, setNombrenegocio] = useState('');
     const [subcategoriaId, setSubcategoriaId] = useState('');
     const [subcategorias, setSubcategorias] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
 
     useEffect(() => {
         bdNegocio.get('/v1/ver-subcategorias')
             .then(res => setSubcategorias(res.data))
             .catch(err => console.log(err));
     }, []);
-
+    const handlePageChange = (event, value) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setCurrentPage(value);
+    };
     const fetchNegocios = () => {
-        const params = { nombrenegocio, subcategoria_id: subcategoriaId };
+        const params = { nombrenegocio, subcategoria_id: subcategoriaId, page: currentPage };
         bdNegocio.get(URL, { params })
-            .then(res => setNegocios(res?.data?.data))
+            .then(res => {
+                setNegocios(res?.data?.data)
+                setTotalPages(res.data.last_page);                
+            })
             .catch(err => console.log(err));
     };
 
     useEffect(() => {
         fetchNegocios();
-    }, []);
+    }, [currentPage]);
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -36,7 +45,7 @@ const Negocio = () => {
 
     return (
         <Box sx={{ marginTop: 12 }}>
-            
+
             <Box sx={{
                 backgroundColor: '#12B1FA',
                 borderTopRightRadius: 10,
@@ -47,17 +56,17 @@ const Negocio = () => {
             }}>
                 <h1 style={{ color: 'white', paddingLeft: 10 }}>
                     <HouseOutlined />
-                    Negocios de Pillcomarca
+                    Negocios en Pillcomarca
                 </h1>
             </Box>
 
-            
-            <Grid container spacing={2} sx={{ padding: '1rem',}}>
-                
+
+            <Grid container spacing={2} sx={{ padding: '1rem', }}>
+
                 <Grid item xs={12} md={3} >
-                    <Box 
-                        component="form" 
-                        onSubmit={handleSearch} 
+                    <Box
+                        component="form"
+                        onSubmit={handleSearch}
                         sx={{
                             display: 'flex',
                             flexDirection: 'column',
@@ -69,7 +78,7 @@ const Negocio = () => {
                             boxSizing: 'border-box'
                         }}
                     >
-                        <TextField  
+                        <TextField
                             label="Buscar Negocio"
                             variant="outlined"
                             value={nombrenegocio}
@@ -106,7 +115,7 @@ const Negocio = () => {
                     </Box>
                 </Grid>
 
-               
+
                 <Grid item xs={12} md={9}>
                     <Box sx={{
                         display: 'flex',
@@ -130,6 +139,12 @@ const Negocio = () => {
                             )
                         ))}
                     </Box>
+                    <NegocioPaginacion
+                        totalPages={totalPages}
+                        currentPage={currentPage}
+                        handlePageChange={handlePageChange}
+                        setCurrentPage={setCurrentPage}
+                    />
                 </Grid>
             </Grid>
         </Box>
