@@ -82,24 +82,25 @@ const NegocioPage = ({ negocio }) => {
           </Grid>
         </Grid>
         <Grid container spacing={2} sx={{ padding: '0.1rem' }}>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={7}>
             <Box sx={{ marginTop: 5 }}>
-              <Typography variant="h2" sx={{ fontSize: '22px', color: '#808080', fontWeight: '500' }}>
+              <Typography variant="h2" sx={{ fontSize: '24px', color: '#808080', fontWeight: '500' }}>
                 Red social del negocio
               </Typography>
             </Box>
             <Grid item xs={12} lg={16} sx={{ paddingLeft: { xs: '1px', md: '21px' } }}>
-              <Box sx={{
-                width: '100%', overflowX: 'auto', marginTop: '30px',
-              }}>
-                <div dangerouslySetInnerHTML={{ __html: data?.redsocial }} />
-
+              <Box sx={{ width: '100%', overflowX: 'auto', marginTop: '30px' }}>
+                {data?.redsocial ? (
+                  <div dangerouslySetInnerHTML={{ __html: data.redsocial }} />
+                ) : (
+                  <Typography sx={{ color: 'black' }}>No cuenta con red social</Typography>
+                )}
               </Box>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={5}>
             <Box sx={{ marginTop: 5 }}>
-              <Typography variant="h2" sx={{ fontSize: '22px', color: '#808080', fontWeight: '500', textAlign: 'center' }}>
+              <Typography variant="h2" sx={{ fontSize: '24px', color: '#808080', fontWeight: '500', textAlign: 'center' }}>
                 Escanea este QR
                 <ScanIcon sx={{ fontSize: '26px', marginLeft: '8px', color: '#808080' }} />
               </Typography>
