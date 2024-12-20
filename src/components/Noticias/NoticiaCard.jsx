@@ -13,7 +13,7 @@ const NoticiaCard = ({ noticia }) => {
     const formatearFecha = (fecha) => {
 
         const fechaCortada = fecha.slice(0, 10)
-        const [anio, mes, dia] = fechaCortada.split("-");        
+        const [anio, mes, dia] = fechaCortada.split("-");
         const fechaInvertida = `${dia}/${mes}/${anio}`;
         return fechaInvertida
     };
@@ -21,6 +21,7 @@ const NoticiaCard = ({ noticia }) => {
         <Grid item xs={12} sm={6} md={4}>
             <div style={{ cursor: 'pointer', width: '100%', height: '300px', borderRadius: '10px' }}>
                 <img
+                    onClick={() => { verNoticiaId(noticia?.id) }}
                     src={noticia?.noticia_imagenes[0]?.imagen}
                     alt={noticia?.titulo}
                     objectFit="contain"
