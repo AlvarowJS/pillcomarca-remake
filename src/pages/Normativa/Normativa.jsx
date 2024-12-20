@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { DocumentScanner, Search } from '@mui/icons-material'
 import { TextField, Box, Grid, Select, InputLabel, MenuItem, Container, Button, Typography } from '@mui/material'
-import TablaNormativa from '../../components/Normativa/TablaNormativa'
-import bdMuni from './../../api/bdMuni'
 import ListaNormativa from '../../components/Normativa/ListaNormativa'
 import NormativaPaginacion from '../../components/Normativa/NormativaPaginacion'
+import bdMuni from './../../api/bdMuni'
+
 const Normativa = () => {
     const [tipos, setTipos] = useState()
     const [selectedOption, setSelectedOption] = useState()
     const [selectYear, setSelectYear] = useState()
     const [search, setSearch] = useState()
-    const [filter, setFilter] = useState()
     const [normativas, setNormativas] = useState()
-    const [currentPage, setCurrentPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [totalPages, setTotalPages] = useState(1)
+    const [totalNormativas, setTotalNormativas] = useState(0)
 
     useEffect(() => {
         bdMuni.get('/v1/tipodedocumento')
@@ -24,61 +24,53 @@ const Normativa = () => {
     }, [])
 
     const handleTipos = () => {
-        setSelectedOption(event.target.getAttribute('data-value'));
+        setSelectedOption(event.target.getAttribute('data-value'))
     }
 
     const handleYears = () => {
-        setSelectYear(event.target.getAttribute('data-value'));
+        setSelectYear(event.target.getAttribute('data-value'))
     }
 
     const years = [
         2024, 2023, 2022, 2021, 2020, 2019, 2018
-    ];
-    // Cambiar de pagina
-    const handlePageChange = (event, value) => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setCurrentPage(value);
-    };
+    ]
 
-    // Lista documentos normativos:
-    useEffect(() => {
-        bdMuni.get(`/v1/documentonormativa?page=${currentPage}`)
-            .then(res => {
-                setNormativas(res.data.data)
-                setTotalPages(res.data.links.pagination.last_page);
-            })
-            .catch(err => console.log(err))
-    }, [])
-    // Filtro por select documentos normativos:
-    const buscarNormativa = () => {
-        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}`
-        )
+    const handlePageChange = (event, value) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+        setCurrentPage(value)
+    }
+
+    const fetchNormativas = (page = 1) => {
+        bdMuni.get(`/v1/documentonormativa?page=${page}`)
             .then(res => {
                 setNormativas(res.data.data)
                 setTotalPages(res.data.links.pagination.last_page)
-                setCurrentPage(1)
+                setTotalNormativas(res.data.links.pagination.total) 
             })
             .catch(err => console.log(err))
     }
 
     useEffect(() => {
-        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}&page=${currentPage ?? ''}`
-        )
+        fetchNormativas(currentPage)
+    }, [currentPage])
+
+    const buscarNormativa = () => {
+        bdMuni.get(`/v1/documentonormativa?year=${selectYear ?? ''}&nombre=${search ?? ''}&tipodedocumento_id=${selectedOption ?? ''}`)
             .then(res => {
                 setNormativas(res.data.data)
                 setTotalPages(res.data.links.pagination.last_page)
-                
+                setTotalNormativas(res.data.links.pagination.total) 
+                setCurrentPage(1)
             })
             .catch(err => console.log(err))
-    }, [currentPage])
-
+    }
 
     return (
         <>
             <Box marginTop={12}>
                 <Box sx={{
                     backgroundColor: '#12B1FA',
-                    width: {sx: '50%', xs: '80%'},
+                    width: { sx: '50%', xs: '80%' },
                     borderTopRightRadius: 10,
                     borderBottomRightRadius: 10,
                     marginBottom: 3,
@@ -110,7 +102,6 @@ const Normativa = () => {
                         <Grid item xs={12} sm={12} md={2}>
                             <InputLabel htmlFor="tipo_doc">Año</InputLabel>
                             <Select
-                                // value={selectedYear}
                                 onChange={handleYears}
                                 label="Año"
                                 fullWidth
@@ -152,13 +143,11 @@ const Normativa = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                {/* <TablaNormativa
-                    selectYear={selectYear}
-                    selectedOption={selectedOption}
-                    search={search}
-                    setFilter={setFilter}
-                    filter={filter}
-                /> */}
+
+                <Typography sx={{ marginTop: 2, paddingX: 4 }}>
+                    Total: {totalNormativas}
+                </Typography>
+
                 <Container
                     sx={{
                         marginTop: 4,
@@ -183,11 +172,9 @@ const Normativa = () => {
                         totalPages={totalPages}
                         currentPage={currentPage}
                         handlePageChange={handlePageChange}
-                        setCurrentPage={setCurrentPage}                        
+                        setCurrentPage={setCurrentPage}
                     />
                 </Container>
-
-
             </Box>
         </>
     )
