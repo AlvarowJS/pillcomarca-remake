@@ -9,15 +9,15 @@ const NoticiaNota = () => {
     const id = useParams();
     const [noticia, setNoticia] = useState()
 
-    
+
     useEffect(() => {
         bdMuni.get(`/v1/noticias/${id.id}`)
-          .then(res => {
-            setNoticia(res?.data)
-          })
-          .catch(err => console.log(err))
-      }, [])
-    
+            .then(res => {
+                setNoticia(res?.data)
+            })
+            .catch(err => console.log(err))
+    }, [])
+
     // const noticiaFiltrada = bdNoticias.find(noticia => noticia.id == id?.id);
 
     const [currentImage, setCurrentImage] = useState(0);
@@ -38,11 +38,16 @@ const NoticiaNota = () => {
         setModalOpen(false);
     };
 
-
     const noticiasAll = () => {
         navigate('/noticias')
     }
 
+    const formatearFecha = (fecha) => {
+        const fechaCortada = fecha.slice(0, 10)
+        const [anio, mes, dia,] = fechaCortada.split("-")
+        const fechaInvertida = `${dia}/${mes}/${anio}`
+        return fechaInvertida
+    }
     return (
         <>
             <Link to='/noticias'>
@@ -84,7 +89,10 @@ const NoticiaNota = () => {
                     }}>
                         {noticia?.titulo}
                     </Typography>
-
+                    <Typography>
+                        {noticia?.fecha && `Fecha de publicación: ${formatearFecha(noticia.fecha)}`}
+                    </Typography>
+                    
                     {/* Imagenes */}
                     <Grid container>
                         <Grid item md={1} xs={2}>
@@ -100,7 +108,6 @@ const NoticiaNota = () => {
                                     position: 'relative',
 
                                 }}
-
                             >
                                 <div
                                     style={{

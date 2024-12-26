@@ -38,6 +38,9 @@ const NormativaPagina = () => {
                 </Box>
             </Link>
             <h1>{normativas?.data?.attributes?.nombre}</h1>
+            <h4 style={{ fontFamily: 'sans-serif' }}>
+                Tipo: {normativas?.data?.attributes?.Tipodedocumento?.nombre}
+            </h4>
             <h4
                 style={{
                     fontFamily: 'sans-serif'
