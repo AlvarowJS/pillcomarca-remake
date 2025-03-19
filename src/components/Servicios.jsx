@@ -22,7 +22,7 @@ const Servicios = () => {
     navigate('/mesa-partes')
   }
   const correoInstitucional = () => {
-    window.open('https://gtxm1103.siteground.biz/webmail/log-in/', '_blank');
+    window.open('https://munipillcomarca.gob.pe:2096/', '_blank');
   }
 
   const libroReclamaciones = () => {
