@@ -131,10 +131,12 @@ const TablaConvocatoria = () => {
                                 {/* <a className='resultado-card' href={item.archivo} target='_blank'>{item.nombre}</a> */}
                                 <Button
                                     style={{
-                                        marginBottom: 4, marginTop: 4,
+                                        marginBottom: 5,
+                                        marginTop: 5,
                                         backgroundColor: '#289688', color: 'white',
                                         paddingLeft: 30, paddingRight: 20, margin: 0,
-                                        border: '1px solid #10A1EA', borderRadius: 5
+                                        // border: '1px solid #10A1EA', borderRadius: 5
+
                                     }}
                                     onClick={() => window.open(item.archivo)}>
                                     {item.nombre}
